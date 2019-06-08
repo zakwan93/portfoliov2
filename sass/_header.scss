@@ -1,0 +1,97 @@
+.header{
+    background-color: $color-primary-dark;
+    grid-column: full-start / center-end;
+    padding: 8rem;
+    padding-top: 4rem;
+
+    display: grid;
+    grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+    grid-template-columns: minmax(min-content,max-content);
+
+    justify-content: center;
+    transition: all .2s;
+
+    &__main-heading{
+        justify-self: center;
+    }
+
+    &__sub-heading{
+        justify-self: center;
+        padding: 1.2rem;
+        letter-spacing: .5rem;
+    }
+   
+    &__logo{
+        display: grid;
+        justify-self: center;
+            width: 8rem;
+            height: 4rem;
+            background: $color-grey-light-1;
+            position: relative;
+          
+          &:before {
+            content: "";
+            position: absolute;
+            top: -2.5rem;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 5rem solid transparent;
+            border-right: 5rem solid transparent;
+            border-bottom: 2.5rem solid $color-grey-light-1;
+          }
+         &:after {
+            content: "";
+            position: absolute;
+            bottom: -2.5rem;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 5rem solid transparent;
+            border-right: 5rem solid transparent;
+            border-top: 2.5rem solid $color-grey-light-1;
+          }
+
+        &-name{
+            height: 3rem;
+            padding: .5rem;
+            justify-self: center;
+            color: $color-primary-dark;
+        }
+
+    }
+      
+
+    &__icon{
+        fill: $color-grey-light-1;
+        height: 4rem;
+        padding: 0;
+        transition: all .2s;
+        width: 100%;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+
+    }
+
+    &__link{
+        &,
+        &:link,
+        &:visited {
+          fill: $color-grey-light-1;
+          text-decoration: none;
+          transition: all 0.2s;
+          align-self: end;
+          transform: translateY(-1rem);
+        }
+    }
+
+
+    &__btn{
+        align-self: center;
+        justify-self: center;
+
+    }
+
+}

@@ -1,0 +1,9 @@
+.email{
+    background-color: $color-primary-dark;
+    grid-column: email-start / email-end;
+    grid-row: 1 / -1;
+
+    display: grid;
+    justify-content: center;
+
+}
