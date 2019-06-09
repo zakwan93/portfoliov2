@@ -28,6 +28,7 @@ html{
 
 body{
     font-family: $font-primary;
+    background-color: $color-primary-dark;
     color: $color-grey-light-1;
     font-weight: 300;
     line-height: 1.6;
@@ -36,9 +37,20 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
-    grid-template-columns: [sidebar-start]8rem[sidebar-end full-start] 
+    grid-template-rows: 100vh min-content repeat(4, min-content);
+    grid-template-columns: [sidebar-start]5rem[sidebar-end full-start] 
     minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 
-    [center-end email-start] 8rem [email-end full-end];
+    [center-end email-start] 5rem [email-end full-end];
 
 }
+
+// @media only screen and(max-width: $bp-large){
+//     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+//     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 
+//     [center-end] minmax(6rem, 1fr) [full-end];
+// }
+
+// @media only screen and(max-width: $bp-medium){
+//     // grid-template-rows: 6rem calc(100vh - 6rem) min-content min-content min-content repeat(3, min-content);
+//     grid-template-rows: 6rem calc(100vh - 6rem); //Don't need to add min-content it adopts by default as a minn content
+// }

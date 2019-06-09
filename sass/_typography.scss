@@ -33,7 +33,20 @@
 
 .heading-4{
     @extend %heading;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-column-gap: 2rem;
+    align-items: center;
+    
+    &::after{
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor;
+    }
 
     &--light{
         color: $color-grey-light-1;
