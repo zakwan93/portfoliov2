@@ -20,8 +20,8 @@
         content: "";
         display: block;
         width: 1px;
-        height: 40vh;
-        background-color:$color-grey-light-1;
+        height: 30vh;
+        background-color:$color-grey-dark-2;
         // margin: 0px auto;
         margin: -2vw 1vw 1vw 1vw;
     }
@@ -32,7 +32,7 @@
         &,
         &:link,
         &:visited {
-          color: $color-grey-light-1;
+          color: $color-grey-dark-2;
           text-decoration: none;
           transition: all 0.2s;
           letter-spacing: .4rem;

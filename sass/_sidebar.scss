@@ -14,7 +14,7 @@
     transition: all .2s;
     
     &__icon{
-        fill: $color-grey-light-1;
+        fill: $color-grey-dark-2;
         margin: 1.5vw 1vw;
         height: 2rem;
         transform: translateY(-1rem);
@@ -23,6 +23,7 @@
 
         &:hover{
             transform: scale(1.5);
+            fill: $color-grey-light-1;
         }
 
         
@@ -31,8 +32,8 @@
         content: "";
         display: block;
         width: 1px;
-        height: 15rem;
-        background-color:$color-grey-light-1;
+        height: 25vh;
+        background-color:$color-grey-dark-2;
         margin: 0px auto;
         margin-left: 2vw;
     }
