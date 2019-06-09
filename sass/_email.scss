@@ -1,9 +1,49 @@
 .email{
     background-color: $color-primary-dark;
     grid-column: email-start / email-end;
-    grid-row: 1 / -1;
+    grid-row: 1 / 1;
 
-    display: grid;
-    justify-content: center;
+    // height: 100vh;
+    // width: 4vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    letter-spacing: 2px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    margin: 1.5vw 1vw;
+
+        
+    &::before{
+        content: "";
+        display: block;
+        width: 1px;
+        height: 40vh;
+        background-color:$color-grey-light-1;
+        // margin: 0px auto;
+        margin: -2vw 1vw 1vw 1vw;
+    }
+
+
+    &-link{
+
+        &,
+        &:link,
+        &:visited {
+          color: $color-grey-light-1;
+          text-decoration: none;
+          transition: all 0.2s;
+          letter-spacing: .4rem;
+          font-size: 1.6rem;
+          margin-left: 1vw;
+
+          &:hover{
+            box-shadow: inset 0 52rem 0 0 $color-grey-dark-1;
+            color: $color-grey-light-2;
+            }
+        }
+    }
 
 }

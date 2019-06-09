@@ -41,15 +41,17 @@
         grid-template-columns: repeat(8, 1fr);
         transition: all .2s;
         position: relative;
+        backface-visibility: hidden;
 
         &-border{
             width: 100%;
             // background-color: transparent;
             grid-row: 3 / 7;
             grid-column: 4 / 8;
+            background-size: cover;
             border: 1px solid $color-grey-light-1;
             border-radius: 3px;
-            z-index: 1;
+            // z-index: 1;
             transform: translateY(1.2rem) translateX(1.2rem);
             // position: relative;
 
@@ -61,7 +63,6 @@
                 grid-row: 3 / 7;
                 grid-column: 4 / 8;
                 background-size: cover;
-                backface-visibility: hidden;
                 // background-blend-mode: saturation;
                 -moz-mix-blend-mode: luminosity;
                 -webkit-mix-blend-mode: luminosity;
