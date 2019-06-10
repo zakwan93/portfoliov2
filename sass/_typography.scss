@@ -34,7 +34,7 @@
 .heading-4{
     @extend %heading;
     font-size: 2.2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: max-content 1fr;
@@ -44,8 +44,10 @@
     &::after{
         content: "";
         height: 1px;
+        border:1px solid rgba($color-grey-light-1, .2);
         display: block;
-        background-color: currentColor;
+        width: 70%;
+        // background-color: currentColor;
     }
 
     &--light{
@@ -55,6 +57,22 @@
         color: $color-grey-dark-1;
     }
 }
+
+.heading-5{
+    @extend %heading;
+    font-size: 1.4rem;
+    color: $color-grey-light-1;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+.heading-6{
+    @extend %heading;
+    font-size: 2.8rem;
+    color: $color-grey-light-2;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
 
 .btn{
     background-color: $color-grey-dark-1;

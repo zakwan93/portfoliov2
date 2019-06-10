@@ -1,10 +1,9 @@
 .about{
     background-color: $color-primary-dark;
-    grid-column: full-start / email-start;
+    grid-column: full-start / full-end;
     padding: 4.5rem;
     display: flex;
     margin-top: 5rem;
-    // align-items: stretch;
     
     &__content{
         font-size: 1.4rem;
@@ -12,6 +11,7 @@
         margin-right: 4.5rem;
         padding: 3rem;
 
+    
         &--text{
 
             &:not(:last-of-type){
@@ -74,9 +74,7 @@
     }
 
     &__picture{
-        // padding: 15rem 0 15rem 5rem;
         flex: 1;
-        // box-shadow: 0 2rem 5rem rgba(#000, .2);
         padding: 3rem;
         margin: 3.5rem auto;
     }
@@ -90,9 +88,8 @@
                 width: 50%;
                 height: 100%;
                 justify-content: center;
-                border: 1px solid $color-grey-light-1;
-                z-index: -1;
-                
+                border: 1px solid $color-grey-dark-2;
+                z-index: -1;       
 
             &-1{
                 border-radius: 3px;
@@ -100,15 +97,15 @@
                 height: 100%;
                 justify-content: center;
                 transform: translateY(-1.1rem) translateX(-1.5rem);
-                mix-blend-mode: luminosity;
+                // mix-blend-mode: luminosity;
+                filter: grayscale(100%) contrast(1) brightness(100%);
                 z-index: 1;
 
                 &:hover{
-                    background-image: url(../img/Zakwan_headshot.jpg);
                     transform: translateY(-.8rem) translateX(-.8rem) ;
-                    mix-blend-mode: normal;
-                    -moz-appearance-mix-blend-mode: normal;
-                    // border: 1px solid transparent;
+                    filter: none;
+                    // mix-blend-mode: normal;
+                    // -moz-appearance-mix-blend-mode: normal;
                 }
             }
         }

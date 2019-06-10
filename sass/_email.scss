@@ -3,8 +3,8 @@
     grid-column: email-start / email-end;
     grid-row: 1 / 1;
 
-    // height: 100vh;
-    // width: 4vw;
+    margin: 1.5rem;
+    margin-right: 2.5rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -13,7 +13,6 @@
     letter-spacing: 2px;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
-    margin: 1.5vw 1vw;
 
         
     &::before{
@@ -23,7 +22,7 @@
         height: 30vh;
         background-color:$color-grey-dark-2;
         // margin: 0px auto;
-        margin: -2vw 1vw 1vw 1vw;
+        margin: -2rem 1.3rem 1.5rem;
     }
 
 
