@@ -322,12 +322,22 @@ body {
     filter: grayscale(100%) contrast(1) brightness(100%);
     border-radius: 3px;
     transition: all .2s; }
+    .recentprojects__img-2 {
+      width: 115%;
+      height: 100%;
+      transform: translateX(-15%);
+      filter: grayscale(100%) contrast(1) brightness(100%);
+      border-radius: 3px;
+      transition: all .2s; }
+      .recentprojects__img-2:hover {
+        filter: none;
+        transform: translateX(-15%) translateY(-0.5rem); }
     .recentprojects__img:hover {
       filter: none;
       transform: translateY(-0.5rem); }
   .recentprojects__paragraph {
     background-color: #54504c;
-    color: #282726;
+    color: rgba(214, 202, 176, 0.9);
     transition: all .5s;
     padding: 2.5rem;
     text-align: left;
@@ -337,7 +347,9 @@ body {
     filter: grayscale(100%) contrast(1) brightness(100%); }
     .recentprojects__paragraph:hover {
       box-shadow: rgba(214, 202, 176, 0.2) 0 1rem 3rem -1.5rem;
-      background-color: #86817C; }
+      background-color: #86817C;
+      color: #282726;
+      transition: all .5s; }
   .recentprojects__technology--list {
     display: flex;
     flex-wrap: wrap;

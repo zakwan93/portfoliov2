@@ -18,6 +18,20 @@
         filter: grayscale(100%) contrast(1) brightness(100%);
         border-radius: 3px;
         transition: all .2s;
+
+        &-2{
+            width: 115%;
+            height: 100%;
+            transform: translateX(-15%);
+            filter: grayscale(100%) contrast(1) brightness(100%);
+            border-radius: 3px;
+            transition: all .2s;
+
+            &:hover{
+                filter: none;
+                transform: translateX(-15%) translateY(-.5rem);
+            }
+        }
         
         &:hover{
             filter: none;
@@ -27,7 +41,8 @@
 
     &__paragraph{
         background-color: $color-grey-dark-1;
-        color: $color-primary-dark;
+        color: rgba($color-grey-light-1, .9);
+        // color: $color-primary-dark;
         transition: all .5s;
         padding: 2.5rem;
         text-align: left;
@@ -39,6 +54,8 @@
         &:hover{
             box-shadow: rgba($color-grey-light-1, 0.2) 0 1rem 3rem -1.5rem;
             background-color: $color-grey-dark-2;
+            color: $color-primary-dark;
+            transition: all .5s;
         }
     }
 
