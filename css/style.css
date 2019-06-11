@@ -20,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-rows: 100vh repeat(7, min-content);
   grid-template-columns: [sidebar-start] minmax(min-content, 8rem) [sidebar-end full-start] 1fr [full-end email-start] minmax(min-content, 8rem) [email-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .projects__heading, .heading-5, .heading-6 {
@@ -33,8 +33,8 @@ body {
   line-height: 1; }
 
 .heading-2 {
-  font-size: 4rem;
-  font-style: italic;
+  font-size: 4.8rem;
+  color: #FCFAF1;
   line-height: 1; }
   .heading-2--light {
     color: #D6CAB0; }
@@ -99,20 +99,41 @@ body {
   margin: 1rem 0; }
 
 .btn {
-  background-color: #54504c;
-  color: #fff;
+  background-image: linear-gradient(to right, #54504c, #86817C);
+  color: #FCFAF1;
   border: none;
-  border-radius: 0;
+  border-radius: .3rem;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
   transition: all .2s; }
-  .btn:hover {
-    background-color: #86817C;
-    transform: translateY(3px);
-    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3); }
+  .btn > * {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    transition: all .2s; }
+  .btn__visible {
+    padding: .3rem 3rem; }
+  .btn__invisible {
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+    position: absolute; }
+  .btn:hover .btn__visible {
+    transform: translateY(220%); }
+  .btn:hover .btn__invisible {
+    top: 5%; }
+
+.paragraph {
+  font-size: 2rem;
+  line-height: 1.3;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Josefin Sans", sans-serif;
+  color: #86817C; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -136,6 +157,7 @@ body {
   width: 5rem;
   display: flex;
   flex-direction: column;
+  -moz-align-items: center;
   align-items: center;
   justify-content: flex-end;
   transition: all .2s; }
@@ -143,6 +165,7 @@ body {
     fill: #86817C;
     margin: 1.5rem auto;
     height: 2rem;
+    width: 5rem;
     transform: translateY(-1rem);
     padding: 0;
     transition: all .2s; }
@@ -409,18 +432,22 @@ body {
     padding: 2rem 7%;
     margin-right: 20%; }
   .recentprojects__img {
-    width: 115%;
-    height: 100%;
-    filter: grayscale(100%) contrast(1) brightness(100%);
     border-radius: 3px;
-    transition: all .2s; }
+    transition: all .5s; }
+    .recentprojects__img-1 {
+      width: 115%;
+      height: 100%;
+      filter: grayscale(100%) contrast(1) brightness(100%);
+      transition: all .5s; }
+      .recentprojects__img-1:hover {
+        filter: none;
+        transform: translateY(-0.5rem); }
     .recentprojects__img-2 {
       width: 115%;
       height: 100%;
       transform: translateX(-15%);
       filter: grayscale(100%) contrast(1) brightness(100%);
-      border-radius: 3px;
-      transition: all .2s; }
+      transition: all .5s; }
       .recentprojects__img-2:hover {
         filter: none;
         transform: translateX(-15%) translateY(-0.5rem); }
@@ -428,15 +455,14 @@ body {
       filter: none;
       transform: translateY(-0.5rem); }
   .recentprojects__paragraph {
-    background-color: #54504c;
-    color: rgba(214, 202, 176, 0.9);
+    background-image: linear-gradient(to right, #54504c, #86817C);
+    color: #FCFAF1;
     transition: all .5s;
     padding: 2.5rem;
     text-align: left;
     font-size: 1.4rem;
     border-radius: 3px;
-    z-index: 1;
-    filter: grayscale(100%) contrast(1) brightness(100%); }
+    z-index: 1; }
     .recentprojects__paragraph:hover {
       box-shadow: rgba(214, 202, 176, 0.2) 0 1rem 3rem -1.5rem;
       transform: translateY(-0.5rem);
@@ -495,7 +521,8 @@ body {
       grid-column: 1 / 7; }
     .recentprojects__1--content {
       grid-column: 7 / -1;
-      text-align: right; }
+      text-align: right;
+      z-index: 2; }
   .recentprojects__2 {
     padding: 0 7%;
     display: grid;
@@ -508,6 +535,14 @@ body {
       position: relative; }
     .recentprojects__2--image {
       grid-column: 7 / -1; }
+
+.contact {
+  background-color: #282726;
+  grid-column: full-start / full-end;
+  text-align: center;
+  padding: 15rem;
+  margin: 0 auto;
+  max-width: 75%; }
 
 @keyframes moveInLeft {
   0% {

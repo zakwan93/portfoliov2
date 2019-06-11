@@ -19,6 +19,8 @@
 
     .project{
         background-color: rgba($color-grey-dark-1, .8);
+        // background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-2);
+        // color: $color-grey-light-2;
         filter: grayscale(100%) contrast(1) brightness(100%);
         transition: .5s;
         backface-visibility: hidden;

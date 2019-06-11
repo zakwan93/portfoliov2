@@ -13,19 +13,28 @@
 
 
     &__img{
-        width: 115%;
-        height: 100%;
-        filter: grayscale(100%) contrast(1) brightness(100%);
+        // filter: grayscale(100%) contrast(1) brightness(100%);
         border-radius: 3px;
-        transition: all .2s;
+        transition: all .5s;
+
+        &-1{
+            width: 115%;
+            height: 100%;
+            filter: grayscale(100%) contrast(1) brightness(100%);
+            transition: all .5s;
+
+            &:hover{
+                filter: none;
+                transform:translateY(-.5rem);
+            }
+        }
 
         &-2{
             width: 115%;
             height: 100%;
             transform: translateX(-15%);
             filter: grayscale(100%) contrast(1) brightness(100%);
-            border-radius: 3px;
-            transition: all .2s;
+            transition: all .5s;
 
             &:hover{
                 filter: none;
@@ -40,8 +49,10 @@
     }
 
     &__paragraph{
-        background-color: $color-grey-dark-1;
-        color: rgba($color-grey-light-1, .9);
+        // background-color: $color-grey-dark-1;
+        background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-2);
+        color: $color-grey-light-2;
+        // color: rgba($color-grey-light-1, .9);
         // color: $color-primary-dark;
         transition: all .5s;
         padding: 2.5rem;
@@ -49,7 +60,7 @@
         font-size: 1.4rem;
         border-radius: 3px;
         z-index: 1;
-        filter: grayscale(100%) contrast(1) brightness(100%);
+        // filter: grayscale(100%) contrast(1) brightness(100%);
 
         &:hover{
             box-shadow: rgba($color-grey-light-1, 0.2) 0 1rem 3rem -1.5rem;
@@ -154,7 +165,7 @@
         &--content{
             grid-column: 7 / -1;
             text-align: right;
-            
+            z-index: 2;
         }
     }
 

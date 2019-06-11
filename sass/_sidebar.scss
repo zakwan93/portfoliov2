@@ -8,6 +8,7 @@
     width: 5rem;
     display: flex;
     flex-direction: column;
+    -moz-align-items: center;
     align-items: center;
     justify-content: flex-end;
     transition: all .2s;
@@ -16,7 +17,7 @@
         fill: $color-grey-dark-2;
         margin: 1.5rem auto;
         height: 2rem;
-        // width: 5rem;
+        width: 5rem;
         transform: translateY(-1rem);
         padding: 0;
         transition: all .2s;
