@@ -1,5 +1,4 @@
 .recentprojects{
-    background-color: $color-primary-dark;
     grid-column: full-start / full-end;
 
     padding: 4.5rem;
@@ -13,7 +12,6 @@
 
 
     &__img{
-        // filter: grayscale(100%) contrast(1) brightness(100%);
         border-radius: 3px;
         transition: all .5s;
 

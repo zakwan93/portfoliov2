@@ -5,8 +5,8 @@
 
 .heading-1{
     @extend %heading;
-    font-size: 6rem;
-    color: $color-grey-light-1;
+    font-size: 7rem;
+    color: $color-grey-light-2;
     line-height: 1;
 }
 
@@ -28,7 +28,9 @@
 .heading-3{
     @extend %heading;
     font-size: 1.6rem;
-    color: $color-grey-dark-2;
+    color: $color-grey-light-1;
+    letter-spacing: .5rem;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -119,6 +121,7 @@
     overflow: hidden;
     transition: all .2s;
 
+
     & > *{
         height: 100%;
         width: 100%;
@@ -128,6 +131,12 @@
 
     &__visible{
         padding: .3rem 3rem;
+        
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $color-grey-light-2;
+        }
     }
 
     &__invisible{
@@ -135,11 +144,14 @@
         left: 0;
         top: -100%;
         position: absolute;
-    }
 
-    // &:hover{
-    //     background-image: linear-gradient(to left, $color-grey-dark-1, $color-grey-dark-2);
-    // }
+        &:link,
+        &:visited{
+            text-decoration: none;
+            color: $color-grey-light-2;
+        }
+        
+    }
 
     &:hover &__visible{
         transform: translateY(220%);
@@ -166,3 +178,4 @@
 .mb-md{margin-bottom: 3rem;}
 .mb-lg{margin-bottom: 6rem;}
 .mb-hg{margin-bottom: 8rem;}
+

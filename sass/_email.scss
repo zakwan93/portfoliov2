@@ -1,46 +1,41 @@
 .email{
-    background-color: $color-primary-dark;
     grid-column: email-start / email-end;
     grid-row: 1 / 1;
-
-    margin: 1.5rem;
-    margin-right: 2.5rem;
     position: fixed;
-    top: 0;
     right: 0;
+    height: 100vh;
+    width: 5rem;
     display: flex;
-    justify-content: flex-start;
-    letter-spacing: 2px;
-    -webkit-writing-mode: vertical-rl;
+    justify-content: flex-end;
+    align-items: center;
     writing-mode: vertical-rl;
-        
-    &::before{
-        content: "";
-        display: block;
-        width: 1px;
-        height: 30vh;
-        background-color:$color-grey-dark-2;
-        // margin: 0px auto;
-        margin: -2rem 1.3rem 1.5rem;
-    }
+    -webkit-writing-mode: vertical-rl;
 
+    &::after{
+        content: "";
+        width: .1rem;
+        height: 12vh;
+        background-color: $color-grey-dark-2;
+        margin: 1.5rem auto 0;
+        
+    }
 
     &-link{
 
         &,
         &:link,
-        &:visited {
-          color: $color-grey-dark-2;
-          text-decoration: none;
-          transition: all 0.2s;
-          letter-spacing: .4rem;
-          font-size: 1.6rem;
-          margin-left: 1vw;
+        &:visited{
+            text-decoration: none;
+            color: $color-grey-dark-2;
+            font-size: 1.6rem;
+            letter-spacing: .2rem;
+            transition: all .5s;
+        }
 
-          &:hover{
-            box-shadow: inset 0 52rem 0 0 $color-grey-dark-1;
-            color: $color-grey-light-2;
-            }
+        &:hover{
+            // box-shadow: inset 0 53rem 0 0 $color-grey-dark-1;
+            transform: translateY(-.5rem);
+            color: $color-grey-light-1;
         }
     }
 

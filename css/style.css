@@ -28,8 +28,8 @@ body {
   font-weight: 400; }
 
 .heading-1 {
-  font-size: 6rem;
-  color: #D6CAB0;
+  font-size: 7rem;
+  color: #FCFAF1;
   line-height: 1; }
 
 .heading-2 {
@@ -43,7 +43,9 @@ body {
 
 .heading-3 {
   font-size: 1.6rem;
-  color: #86817C;
+  color: #D6CAB0;
+  letter-spacing: .5rem;
+  font-weight: 800;
   text-transform: uppercase; }
 
 .heading-4 {
@@ -118,11 +120,17 @@ body {
     transition: all .2s; }
   .btn__visible {
     padding: .3rem 3rem; }
+    .btn__visible:link, .btn__visible:visited {
+      text-decoration: none;
+      color: #FCFAF1; }
   .btn__invisible {
     padding: 2rem 0;
     left: 0;
     top: -100%;
     position: absolute; }
+    .btn__invisible:link, .btn__invisible:visited {
+      text-decoration: none;
+      color: #FCFAF1; }
   .btn:hover .btn__visible {
     transform: translateY(220%); }
   .btn:hover .btn__invisible {
@@ -148,11 +156,9 @@ body {
   margin-bottom: 8rem; }
 
 .sidebar {
-  background-color: #282726;
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / 1;
   position: fixed;
-  margin: 1.5rem;
   height: 100vh;
   width: 5rem;
   display: flex;
@@ -178,13 +184,12 @@ body {
     content: "";
     display: block;
     width: 1px;
-    height: 25vh;
+    height: 12vh;
     background-color: #86817C; }
   .sidebar__link {
     text-decoration: none; }
 
 .header {
-  background-color: #282726;
   grid-column: full-start / full-end;
   position: relative; }
   .header__logo-box {
@@ -241,7 +246,6 @@ body {
       transform: translate(-50%, -50%) scale(1.5); }
 
 .about {
-  background-color: #282726;
   grid-column: full-start / full-end;
   padding: 4.5rem;
   display: flex;
@@ -254,10 +258,10 @@ body {
     .about__content--text:not(:last-of-type) {
       margin-bottom: 2rem; }
     .about__content--text-link, .about__content--text-link:link, .about__content--text-link:visited {
-      color: #86817C;
+      color: #FCFAF1;
       transition: all .2s ease-in-out;
       text-decoration: none;
-      box-shadow: inset 0 -3px 0 #86817C; }
+      box-shadow: inset 0 -2px 0 #FCFAF1; }
       .about__content--text-link:hover, .about__content--text-link:link:hover, .about__content--text-link:visited:hover {
         box-shadow: inset 0 -33px 0 0 #FCFAF1;
         color: #282726; }
@@ -308,7 +312,6 @@ body {
         filter: none; }
 
 .experiance {
-  background-color: #282726;
   grid-column: full-start / full-end;
   height: 60vh;
   margin: 5rem;
@@ -317,17 +320,16 @@ body {
     padding: 0 20%; }
 
 .otherprojects {
-  background-color: #282726;
   grid-column: full-start / full-end;
-  padding: 15rem;
-  margin-top: 0 auto;
+  margin: 15rem 0;
   display: flex;
   align-items: center;
   flex-direction: column; }
 
 .projects {
+  padding: 0 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
   max-width: 110rem; }
   .projects .project {
@@ -388,43 +390,48 @@ body {
       box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px; }
 
 .email {
-  background-color: #282726;
   grid-column: email-start / email-end;
   grid-row: 1 / 1;
-  margin: 1.5rem;
-  margin-right: 2.5rem;
   position: fixed;
-  top: 0;
   right: 0;
+  height: 100vh;
+  width: 5rem;
   display: flex;
-  justify-content: flex-start;
-  letter-spacing: 2px;
-  -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl; }
-  .email::before {
+  justify-content: flex-end;
+  align-items: center;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl; }
+  .email::after {
     content: "";
-    display: block;
-    width: 1px;
-    height: 30vh;
+    width: .1rem;
+    height: 12vh;
     background-color: #86817C;
-    margin: -2rem 1.3rem 1.5rem; }
+    margin: 1.5rem auto 0; }
   .email-link, .email-link:link, .email-link:visited {
-    color: #86817C;
     text-decoration: none;
-    transition: all 0.2s;
-    letter-spacing: .4rem;
+    color: #86817C;
     font-size: 1.6rem;
-    margin-left: 1vw; }
-    .email-link:hover, .email-link:link:hover, .email-link:visited:hover {
-      box-shadow: inset 0 52rem 0 0 #54504c;
-      color: #FCFAF1; }
+    letter-spacing: .2rem;
+    transition: all .5s; }
+  .email-link:hover {
+    transform: translateY(-0.5rem);
+    color: #D6CAB0; }
 
 .footer {
-  background-color: #282726;
-  grid-column: full-start / full-end; }
+  grid-column: sidebar-start / email-end;
+  padding: 3rem;
+  background-color: rgba(84, 80, 76, 0.5);
+  width: 100%;
+  height: 12.2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer__paragraph {
+    font-size: 1.4rem;
+    color: #FCFAF1;
+    letter-spacing: .2rem; }
 
 .recentprojects {
-  background-color: #282726;
   grid-column: full-start / full-end;
   padding: 4.5rem;
   margin-top: 5rem; }
@@ -537,12 +544,12 @@ body {
       grid-column: 7 / -1; }
 
 .contact {
-  background-color: #282726;
   grid-column: full-start / full-end;
   text-align: center;
   padding: 15rem;
   margin: 0 auto;
-  max-width: 75%; }
+  min-width: 65%;
+  max-width: 80%; }
 
 @keyframes moveInLeft {
   0% {

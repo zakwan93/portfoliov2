@@ -1,26 +1,21 @@
 .otherprojects{
-    background-color: $color-primary-dark;
     grid-column: full-start / full-end;
-
-    padding: 15rem;
-    margin-top: 0 auto;
+    margin: 15rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 
 .projects{
+    padding: 0 5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
     max-width: 110rem;
     
 
     .project{
         background-color: rgba($color-grey-dark-1, .8);
-        // background-image: linear-gradient(to right, $color-grey-dark-1, $color-grey-dark-2);
-        // color: $color-grey-light-2;
         filter: grayscale(100%) contrast(1) brightness(100%);
         transition: .5s;
         backface-visibility: hidden;

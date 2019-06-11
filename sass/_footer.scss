@@ -1,5 +1,17 @@
 .footer{
-    background-color: $color-primary-dark;
-    grid-column: full-start / full-end;
+    grid-column: sidebar-start / email-end;
+    padding: 3rem;
+    background-color: rgba($color-grey-dark-1, .5);
+    width: 100%;
+    height: 12.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+
+    &__paragraph{
+        font-size: 1.4rem;
+        color: $color-grey-light-2;
+        letter-spacing: .2rem;
+    }
 }
