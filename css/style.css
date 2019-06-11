@@ -23,7 +23,7 @@ body {
   grid-template-rows: 100vh repeat(5, min-content);
   grid-template-columns: [sidebar-start] minmax(min-content, 8rem) [sidebar-end full-start] 1fr [full-end email-start] minmax(min-content, 8rem) [email-end]; }
 
-.heading-1, .heading-2, .heading-3, .heading-4, .heading-5, .heading-6 {
+.heading-1, .heading-2, .heading-3, .heading-4, .projects__heading, .heading-5, .heading-6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; }
 
@@ -64,6 +64,27 @@ body {
     color: #D6CAB0; }
   .heading-4--dark {
     color: #54504c; }
+
+.projects__heading {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .projects__heading::before {
+    content: "";
+    display: block;
+    height: 1px;
+    border: 1px solid rgba(214, 202, 176, 0.2);
+    width: 25%;
+    margin-top: 1.5rem; }
+  .projects__heading::after {
+    content: "";
+    display: block;
+    height: 1px;
+    border: 1px solid rgba(214, 202, 176, 0.2);
+    width: 25%;
+    margin-top: 1.5rem; }
 
 .heading-5 {
   font-size: 1.4rem;
@@ -115,11 +136,12 @@ body {
   width: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   transition: all .2s; }
   .sidebar__icon {
     fill: #86817C;
-    margin: 1.5rem 1rem;
+    margin: 1.5rem auto;
     height: 2rem;
     transform: translateY(-1rem);
     padding: 0;
@@ -127,13 +149,16 @@ body {
     .sidebar__icon:hover {
       transform: scale(1.5);
       fill: #D6CAB0; }
+    .sidebar__icon__link {
+      text-decoration: none; }
   .sidebar::after {
     content: "";
     display: block;
     width: 1px;
     height: 25vh;
-    background-color: #86817C;
-    margin-left: 2.5rem; }
+    background-color: #86817C; }
+  .sidebar__link {
+    text-decoration: none; }
 
 .header {
   background-color: #282726;
@@ -262,15 +287,82 @@ body {
 .experiance {
   background-color: #282726;
   grid-column: full-start / full-end;
-  height: 40vh;
+  height: 60vh;
   margin: 5rem;
   padding: 5rem; }
   .experiance__heading {
     padding: 0 20%; }
 
-.projects {
+.otherprojects {
   background-color: #282726;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 15rem;
+  margin-top: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  max-width: 110rem; }
+  .projects .project {
+    background-color: rgba(84, 80, 76, 0.8);
+    filter: grayscale(100%) contrast(1) brightness(100%);
+    transition: .5s;
+    backface-visibility: hidden; }
+    .projects .project--inner {
+      padding: 2rem 1.75rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 100%;
+      border-radius: .3rem;
+      transition: all .2s; }
+    .projects .project__icons {
+      display: flex;
+      margin-bottom: 3rem;
+      justify-content: space-between;
+      align-items: center;
+      transition: all .2s; }
+      .projects .project__icons-github, .projects .project__icons-globe {
+        fill: #86817C;
+        height: 2rem;
+        width: 2rem;
+        justify-self: flex-end;
+        transition: all .2s; }
+      .projects .project__icons-folder {
+        fill: #D6CAB0;
+        height: 3rem;
+        width: 3rem;
+        align-self: flex-start;
+        margin: 0 auto; }
+      .projects .project__icons--link {
+        padding: 1rem;
+        transition: all .2s; }
+        .projects .project__icons--link :hover {
+          fill: #D6CAB0; }
+    .projects .project__name--heading {
+      color: #FCFAF1; }
+    .projects .project__discription {
+      font-size: 1.4rem; }
+    .projects .project__language {
+      -moz-box-flex: 1;
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      margin-top: 2rem; }
+      .projects .project__language--list {
+        list-style: none;
+        color: rgba(252, 250, 241, 0.7);
+        margin-right: 1rem;
+        font-size: 1.2rem; }
+    .projects .project:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px; }
 
 .email {
   background-color: #282726;
@@ -376,7 +468,8 @@ body {
       width: 2.2rem;
       height: 2.2rem;
       margin: 0 1rem;
-      fill: #86817C; }
+      fill: #86817C;
+      transition: all .2s; }
       .recentprojects__icon-github:hover, .recentprojects__icon-globe:hover {
         fill: #FCFAF1; }
     .recentprojects__icon-1 {

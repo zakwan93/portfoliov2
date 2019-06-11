@@ -41,6 +41,7 @@
     grid-column-gap: 2rem;
     align-items: center;
     
+    
     &::after{
         content: "";
         height: 1px;
@@ -56,6 +57,34 @@
     &--dark{
         color: $color-grey-dark-1;
     }
+}
+
+.projects__heading{
+    @extend %heading;
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    &::before{
+        content: "";
+        display: block;
+        height: 1px;
+        border: 1px solid rgba($color-grey-light-1, .2);
+        width: 25%;
+        margin-top: 1.5rem;
+    }
+    &::after{
+        content: "";
+        display: block;
+        height: 1px;
+        border: 1px solid rgba($color-grey-light-1, .2);
+        width: 25%;
+        margin-top: 1.5rem;
+    }
+    
+
 }
 
 .heading-5{

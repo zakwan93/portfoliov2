@@ -1,232 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+            rel="stylesheet"
+            />
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+        <title>Zakwan Bhaiyat | Full Stack Developer</title>
+    </head>
+    <body class="container">
+        <div class="sidebar">
+            <a href="https://www.linkedin.com/in/zakwan-bhaiyat/"
+                class="sidebar__link" target="_blank">
+                <svg class="sidebar__icon">
+                    <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a href="https://twitter.com/zakwan1993" class="sidebar__link"
+                target="_blank">
+                <svg class="sidebar__icon">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/zakwan93" class="sidebar__link"
+                target="_blank">
+                <svg class="sidebar__icon">
+                    <use xlink:href="img/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
+            <a href="https://codepen.io/zakwan93-the-animator/"
+                class="sidebar__link" target="_blank">
+                <svg class="sidebar__icon">
+                    <use xlink:href="img/sprite.svg#icon-codepen"></use>
+                </svg>
+            </a>
 
-    <title>Zakwan Bhaiyat | Full Stack Developer</title>
-  </head>
-  <body class="container">
-    <div class="sidebar">
-      <svg class="sidebar__icon sidebar__icon-1">
-                <use xlink:href="img/sprite.svg#icon-linkedin"> 
-                </use>
-            </svg>
-            <svg class="sidebar__icon sidebar__icon-2">
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-            </svg>
-            <svg class="sidebar__icon sidebar__icon-3">
-                <use xlink:href="img/sprite.svg#icon-github"></use>
-            </svg>
-            <svg class="sidebar__icon sidebar__icon-4">
-                <use xlink:href="img/sprite.svg#icon-skype"></use>
-            </svg>
-            <svg class="sidebar__icon sidebar__icon-5">
-                <use xlink:href="img/sprite.svg#icon-instagram"></use>
-            </svg>
-    </div>
-
-    <div class="email">
-      <a href="mailto:zakwan.bhaiyat23@gmail.com" class="email-link">
-        zakwan.bhaiyat23@gmail.com
-      </a>
-    </div>
-
-    <header class="header">
-        <div class="header__logo-box">
-          <h2 class="heading-2 header__logo">ZB</h2>
+            <a href="https://www.instagram.com/zakwan.bhaiyat/"
+                class="sidebar__link" target="_blank">
+                <svg class="sidebar__icon">
+                    <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
         </div>
-  
-        <div class="header__text-box">
-          <h1 class="heading-1 heading-primary mb-sm">
-            <span class="heading-primary--main">Zakwan</span>
-            <span class="heading-primary--sub">Bhaiyat</span>
-          </h1>
-          <h3 class="heading-3 heading-secondary">
-              Full Stack Developer | Coffee Lover
-          </h3>
-        </div>
-        <a href="#about" class="header__link">
-            <svg class="header__icon">
-              <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
-            </svg>
-        </a>
-      </header>
 
-    <section class="about">
-        <div class="about__content" id="about">
-            <h4 class="heading-4 mb-md about__content--heading">01. About Me</h4>
-            <p class="about__content--text">
-                Hello! I'm Zakwan, a full stack developer based in New York, NY who
-                enjoys building and learning new things that live on the internet. I develop
-                exceptional websites and web apps that provide intuitive,
-                pixel-perfect user interfaces with efficient and modern backends.
-            </p>
-            <p class="about__content--text">
-                I completed my Bachelor's degree in Computer Science stream from
-                <a class = "about__content--text-link" href="https://www.siu.edu.in/" target="_blank">
-                Symbiosis International University</a> in 2015 .
-                  Later, I moved to NYC in 2017 and completed full-time web development intensive course from 
-                  <a class = "about__content--text-link" href="https://www.nycda.com//" target="_blank">
-                  The New York Code + Design Academy.</a> Currently, I'm working as a Web Application Developer at <a class = "about__content--text-link" href="https://www.fastadvancefunding.com//" target="_blank">Fast Advance Funding.</a>	
-            </p>
-            <p class="about__content--text">
-                  As a full stack developer, I enjoy bridging the gap between functionality and design.
-            </p>
-            <p class="about__content--text">
-                Here's a few technologies I've been working with recently:
-            </p>
-            <ul class="list">
-              <li class="list__item">Ruby</li>
-              <li class="list__item">React</li>
-              <li class="list__item">Rails / Sinatra</li>
-              <li class="list__item">Vue</li>
-              <li class="list__item">Python</li>
-              <li class="list__item">Wordpress</li>
-              <li class="list__item">JavaScript</li>
-              <li class="list__item">PostgreSQL</li>
-              <li class="list__item">HTML & (S)CSS</li>
-              <li class="list__item">Sqlite3</li>
-            </ul>
-            
+        <div class="email">
+            <a href="mailto:zakwan.bhaiyat23@gmail.com" class="email-link">
+                zakwan.bhaiyat23@gmail.com
+            </a>
         </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+                <h2 class="heading-2 header__logo">ZB</h2>
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-1 heading-primary mb-sm">
+                    <span class="heading-primary--main">Zakwan</span>
+                    <span class="heading-primary--sub">Bhaiyat</span>
+                </h1>
+                <h3 class="heading-3 heading-secondary">
+                    Full Stack Developer | Coffee Lover
+                </h3>
+            </div>
+            <a href="#about" class="header__link">
+                <svg class="header__icon">
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-down"></use>
+                </svg>
+            </a>
+        </header>
+
+        <section class="about">
+            <div class="about__content" id="about">
+                <h4 class="heading-4 mb-md about__content--heading">01. About Me</h4>
+                <p class="about__content--text">
+                    Hello! I'm Zakwan, a full stack developer based in New York,
+                    NY who
+                    enjoys building and learning new things that live on the
+                    internet. I develop
+                    exceptional websites and web apps that provide intuitive,
+                    pixel-perfect user interfaces with efficient and modern
+                    backends.
+                </p>
+                <p class="about__content--text">
+                    I completed my Bachelor's degree in Computer Science stream
+                    from
+                    <a class="about__content--text-link"
+                        href="https://www.siu.edu.in/" target="_blank">
+                        Symbiosis International University</a> in 2015 .
+                    Later, I moved to NYC in 2017 and completed full-time web
+                    development intensive course from
+                    <a class="about__content--text-link"
+                        href="https://www.nycda.com//" target="_blank">
+                        The New York Code + Design Academy.</a> Currently, I'm
+                    working as a Web Application Developer at <a
+                        class="about__content--text-link"
+                        href="https://www.fastadvancefunding.com//"
+                        target="_blank">Fast Advance Funding.</a>
+                </p>
+                <p class="about__content--text">
+                    As a full stack developer, I enjoy bridging the gap between
+                    functionality and design.
+                </p>
+                <p class="about__content--text">
+                    Here's a few technologies I've been working with recently:
+                </p>
+                <ul class="list">
+                    <li class="list__item">Ruby</li>
+                    <li class="list__item">React</li>
+                    <li class="list__item">Rails / Sinatra</li>
+                    <li class="list__item">Vue</li>
+                    <li class="list__item">Python</li>
+                    <li class="list__item">Wordpress</li>
+                    <li class="list__item">JavaScript</li>
+                    <li class="list__item">PostgreSQL</li>
+                    <li class="list__item">HTML & (S)CSS</li>
+                    <li class="list__item">Sqlite3</li>
+                </ul>
+
+            </div>
+
+            <div class="about__picture">
+                <figure class="picture">
+                    <figcaption class="picture--item">
+                        <img src="img/Zakwan_headshot.jpg" alt="Zakwan's
+                            Headshot" class="picture--item-1">
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="experiance">
+            <h4 class="heading-4 mb-md experiance__heading">02. Experiance</h4>
+        </section>
+
+        <section class="recentprojects">
+            <h4 class="heading-4 mb-md recentprojects__heading">03. Some Things
+                I've Built</h4>
+
+            <!-- Project1 Start -->
+            <div class="recentprojects__1">
+                <div class="recentprojects__1--image">
+                    <a href="#">
+                        <img src="img/lets_code.png" alt="Let's Code SS"
+                            class="recentprojects__img">
+                    </a>
+                </div>
+
+                <div class="recentprojects__1--content">
+                    <h5 class="heading-5">Featured Project</h5>
+                    <h6 class="heading-6"> <a href="#"
+                            class="recentprojects__link"> Let's Code </a> </h6>
+                    <div class="recentprojects__paragraph">
+                        <p>
+                            Designed a ​Ruby on Rails​ chat application to find
+                            people with different skills from around the world.
+                            Used rails Action Cable feature for chatroom
+                            and Active Storage to store images directly in
+                            database locally and on AWS S3.
+                        </p>
+                    </div>
+                    <ul class="recentprojects__technology--list
+                        recentprojects__technology--list-1">
+                        <li class="recentprojects__technology--list-1-name">Ruby
+                            on Rails</li>
+                        <li class="recentprojects__technology--list-1-name">Coffee
+                            Script</li>
+                        <li class="recentprojects__technology--list-1-name">Bootstrap</li>
+                        <li class="recentprojects__technology--list-1-name">PostgreSQL</li>
+                    </ul>
+                    <div class="recentprojects__icon recentprojects__icon-1">
+                        <a href="#" class="recentprojects__icon__link
+                            recentprojects__link">
+                            <svg class="recentprojects__icon-github">
+                                <use xlink:href="img/sprite.svg#icon-github">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="recentprojects__icon__link
+                            recentprojects__link">
+                            <svg class="recentprojects__icon-globe">
+                                <use xlink:href="img/sprite.svg#icon-globe">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project1 End -->
+
+            <!-- Project2 Start -->
+            <div class="recentprojects__2">
+                <div class="recentprojects__2--content">
+                    <h5 class="heading-5">Featured Project</h5>
+                    <h6 class="heading-6"> <a href="#"
+                            class="recentprojects__link"> Resume Genius </a>
+                    </h6>
+                    <div class="recentprojects__paragraph">
+                        <p>
+                            Design and developed Ruby on rails application to
+                            generate online resume in different design template
+                            and download a pdf version on one click for free.
+                        </p>
+                    </div>
+                    <ul class="recentprojects__technology--list
+                        recentprojects__technology--list-2">
+                        <li class="recentprojects__technology--list-2-name">Ruby
+                            on Rails</li>
+                        <li class="recentprojects__technology--list-2-name">HTML5
+                            / CSS3</li>
+                        <li class="recentprojects__technology--list-2-name">UiKit</li>
+                        <li class="recentprojects__technology--list-2-name">PostgreSQL</li>
+                    </ul>
+                    <div class="recentprojects__icon recentprojects__icon-2">
+                        <a href="#" class="recentprojects__icon__link
+                            recentprojects__link">
+                            <svg class="recentprojects__icon-github">
+                                <use xlink:href="img/sprite.svg#icon-github">
+                                </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="recentprojects__icon__link
+                            recentprojects__link">
+                            <svg class="recentprojects__icon-globe">
+                                <use xlink:href="img/sprite.svg#icon-globe">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="recentprojects__2--image">
+                    <a href="#">
+                        <img src="img/resumegenius.png" alt="Let's Code SS"
+                            class="recentprojects__img-2">
+                    </a>
+
+                </div>
+
+            </div>
+            <!-- Project2 End -->
+        </section>
+
+
+        <section class="otherprojects">
+            <h4 class="mb-md projects__heading">04. Other Projects</h4>
+            <div class="projects">
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a
+                                        href="https://github.com/skhoule/nycda-shipped-app"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://sal-zakshipment.herokuapp.com/"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">SalZak
+                                    Shipment Service</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Design a Ruby on rails application for shippers
+                                to help them organize all of the ships in their
+                                fleet, with a user login system. Implemented
+                                Paperclip gem for upload a picture locally and
+                                Bootstrap framework for mobile responsive layout
+                                by high design standards.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">Ruby on
+                                    Rails</li>
+                                <li class="project__language--list">Bootstrap</li>
+                                <li class="project__language--list">PostgreSQL</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a
+                                        href="https://github.com/zakwan93/mini-blog-app"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://creatyourownblog.herokuapp.com/"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">Sinatra
+                                    Blogging Application</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Built an app that allow authenticate user to
+                                post their own blog. User can Sign up, Sign in,
+                                Sign out, Edit and Delete their account and can
+                                see a profile page with all of their account
+                                details and micro-blog posts to date. Display 10
+                                most recent posts (the “feed”) on user's
+                                homepage.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">Ruby</li>
+                                <li class="project__language--list">Sinatra</li>
+                                <li class="project__language--list">JavaScript</li>
+                                <li class="project__language--list">Sqlite3</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a
+                                        href="https://github.com/zakwan93/VuePublicLibrary"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href=https://zakwan93.github.io/FlashCardVueApp/
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">Flash Card</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Build a Vue.js web page to add Flash Card dynamically on page. User can add text on front and back of card. Add CSS animation to flip a card when user hover on specifc card.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">Vue.js</li>
+                                <li class="project__language--list">JavaScript</li>
+                                <li class="project__language--list">CSS3</li>
+                                <li class="project__language--list">HTML5</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a
+                                        href="https://github.com/zakwan93/VuePublicLibrary"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://zakwan93.github.io/VuePublicLibrary/"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">Public
+                                    Library</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Build a simple Vue.js web page to retrive data
+                                from JavaScript object. Also, allow user to
+                                search for specific book.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">Vue.js</li>
+                                <li class="project__language--list">JavaScript</li>
+                                <li class="project__language--list">CSS3</li>
+                                <li class="project__language--list">HTML5</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a
+                                        href="https://github.com/zakwan93/Pokedex"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://zakwan93.github.io/Pokedex/"
+                                        class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">Pokemon
+                                    Go</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Build a web page to retrieve the stats of
+                                selected pokemon from Pokemon API like Name,
+                                Height, HP, Attack, Defence etc. Added few
+                                animationn to make it more attractive using CSS
+                                animations.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">JavaScript</li>
+                                <li class="project__language--list">API</li>
+                                <li class="project__language--list">CSS3</li>
+                                <li class="project__language--list">HTML5</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a href="https://github.com/zakwan93/tictactoe" class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://zakwan93.github.io/tictactoe/" class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">TicTacToc Game</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                    Two player tic tac toe game which keeps track of a number of winning game for each player until user refresh the page.
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">JavaScript</li>
+                                <li class="project__language--list">CSS3</li>
+                                <li class="project__language--list">HTML5</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+
+                <div class="project">
+                    <div class="project--inner">
+                        <header>
+                            <div class="project__icons">
+                                <div class="project__icons--left">
+                                    <svg class="project__icons-folder">
+                                        <use
+                                            xlink:href="img/sprite.svg#icon-folder"></use>
+                                    </svg>
+                                </div>
+                                <div class="project__icons--right">
+                                    <a href="https://github.com/zakwan93/outdoors" class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-github">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-github">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://zakwan93.github.io/outdoors/" class="project__icons--link
+                                        project__icons--right" target="_blank">
+                                        <svg class="project__icons-globe">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-globe">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__name">
+                                <h5 class="heading-6 project__name--heading">Outdoors</h5>
+                            </div>
+
+                            <div class="project__discription">
+                                Build a single page desktop and responsive website for tour company which provide different packages for trip. Implemented CSS floting method for whole website and add various type of animation for mordern website look. 
+                            </div>
+                        </header>
+                        <footer>
+                            <ul class="project__language">
+                                <li class="project__language--list">npm</li>
+                                <li class="project__language--list">(S)CSS</li>
+                                <li class="project__language--list">HTML5</li>
+                            </ul>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="project">
+                        <div class="project--inner">
+                            <header>
+                                <div class="project__icons">
+                                    <div class="project__icons--left">
+                                        <svg class="project__icons-folder">
+                                            <use
+                                                xlink:href="img/sprite.svg#icon-folder"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="project__icons--right">
+                                        <a href="https://github.com/zakwan93/nexter" class="project__icons--link
+                                            project__icons--right" target="_blank">
+                                            <svg class="project__icons-github">
+                                                <use
+                                                    xlink:href="img/sprite.svg#icon-github">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                        <a href="https://zakwan93.github.io/nexter/" class="project__icons--link
+                                            project__icons--right" target="_blank">
+                                            <svg class="project__icons-globe">
+                                                <use
+                                                    xlink:href="img/sprite.svg#icon-globe">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project__name">
+                                    <h5 class="heading-6 project__name--heading">Nexter</h5>
+                                </div>
     
-        <div class="about__picture">
-          <figure class="picture">
-            <figcaption class="picture--item">
-                <img src="img/Zakwan_headshot.jpg" alt="Zakwan's Headshot" class="picture--item-1">
-            </figcaption>
-          </figure>
-        </div> 
-    </section>
+                                <div class="project__discription">
+                                    Design single page website using CSS Grid for Realtors who help people to find the perfect home. clear the fundament of CSS Grid and become much more comfortable with it.
+                                </div>
+                            </header>
+                            <footer>
+                                <ul class="project__language">
+                                    <li class="project__language--list">npm</li>
+                                    <li class="project__language--list">CSS Grid</li>
+                                    <li class="project__language--list">(S)CSS</li>
+                                    <li class="project__language--list">HTML5</li>
+                                </ul>
+                            </footer>
+                        </div>
+                    </div>
 
-    <section class="experiance">
-        <h4 class="heading-4 mb-md experiance__heading">02. Experiance</h4>
-    </section>
-
-    <section class="recentprojects">
-        <h4 class="heading-4 mb-md recentprojects__heading">03. Some Things I've Built</h4>
-
-      <!-- Project1 Start -->
-        <div class="recentprojects__1">
-          <div class="recentprojects__1--image">
-              <a href="#">
-                  <img src="img/lets_code.png" alt="Let's Code SS" class="recentprojects__img">
-              </a>
-          </div>
-          
-          <div class="recentprojects__1--content">
-            <h5 class="heading-5">Featured Project</h5>
-            <h6 class="heading-6"> <a href="#" class="recentprojects__link"> Let's Code </a> </h6>
-            <div class="recentprojects__paragraph">
-              <p>
-                  Designed a ​Ruby on Rails​ chat application to find people with different skills from around the world. Used rails Action Cable feature for chatroom
-                  and Active Storage to store images directly in database locally and on AWS S3.
-              </p>
-            </div>
-            <ul class="recentprojects__technology--list recentprojects__technology--list-1 ">
-                <li class="recentprojects__technology--list-1-name">Ruby on Rails</li>
-                <li class="recentprojects__technology--list-1-name">Coffee Script</li>
-                <li class="recentprojects__technology--list-1-name">Bootstrap</li>
-                <li class="recentprojects__technology--list-1-name">PostgreSQL</li>
-            </ul>
-            <div class="recentprojects__icon recentprojects__icon-1">
-              <a href="#" class="recentprojects__icon__link recentprojects__link">
-                  <svg class="recentprojects__icon-github">
-                      <use xlink:href="img/sprite.svg#icon-github"> 
-                      </use>
-                  </svg>
-              </a>
-              <a href="#" class="recentprojects__icon__link recentprojects__link">
-                  <svg class="recentprojects__icon-globe">
-                      <use xlink:href="img/sprite.svg#icon-globe"> 
-                      </use>
-                  </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-       <!-- Project1 End -->
-
-       <!-- Project2 Start -->
-       <div class="recentprojects__2">
-          <div class="recentprojects__2--content">
-            <h5 class="heading-5">Featured Project</h5>
-            <h6 class="heading-6"> <a href="#" class="recentprojects__link"> Resume Genius </a> </h6>
-            <div class="recentprojects__paragraph">
-              <p>
-                  Design and developed Ruby on rails application to generate online resume in different design template and download a pdf version on one click for free.
-              </p>
-            </div>
-            <ul class="recentprojects__technology--list recentprojects__technology--list-2 ">
-                <li class="recentprojects__technology--list-2-name">Ruby on Rails</li>
-                <li class="recentprojects__technology--list-2-name">HTML5 / CSS3</li>
-                <li class="recentprojects__technology--list-2-name">UiKit</li>
-                <li class="recentprojects__technology--list-2-name">PostgreSQL</li>
-            </ul>
-            <div class="recentprojects__icon recentprojects__icon-2">
-              <a href="#" class="recentprojects__icon__link recentprojects__link">
-                  <svg class="recentprojects__icon-github">
-                      <use xlink:href="img/sprite.svg#icon-github"> 
-                      </use>
-                  </svg>
-              </a>
-              <a href="#" class="recentprojects__icon__link recentprojects__link">
-                  <svg class="recentprojects__icon-globe">
-                      <use xlink:href="img/sprite.svg#icon-globe"> 
-                      </use>
-                  </svg>
-              </a>
-            </div>
-          </div>
-
-          <div class="recentprojects__2--image">
-              <a href="#">
-                  <img src="img/resumegenius.png" alt="Let's Code SS" class="recentprojects__img-2">
-              </a>
-              
-          </div>
-          
-        </div>
-       <!-- Project2 End -->
-
+                    <div class="project">
+                            <div class="project--inner">
+                                <header>
+                                    <div class="project__icons">
+                                        <div class="project__icons--left">
+                                            <svg class="project__icons-folder">
+                                                <use
+                                                    xlink:href="img/sprite.svg#icon-folder"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="project__icons--right">
+                                            <a href="https://github.com/zakwan93/portfolio" class="project__icons--link
+                                                project__icons--right" target="_blank">
+                                                <svg class="project__icons-github">
+                                                    <use
+                                                        xlink:href="img/sprite.svg#icon-github">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                            <a href="https://www.zakwanbhaiyat.com" class="project__icons--link
+                                                project__icons--right" target="_blank">
+                                                <svg class="project__icons-globe">
+                                                    <use
+                                                        xlink:href="img/sprite.svg#icon-globe">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="project__name">
+                                        <h5 class="heading-6 project__name--heading">Personal Website V1</h5>
+                                    </div>
         
-    </section>
-<!--           
-          <h5 class="heading-5 recentprojects__1-name">Let's Codee</h5>
-          <p class="recentprojects__1-description">
-              Designed a ​Ruby on Rails​ chat application to find people with different skills from around the world.
-          </p>
-          <ul class="list">
-              <li class="list__item">Ruby on Rails</li>
-              <li class="list__item">Coffee Script</li>
-              <li class="list__item">Bootstrap</li>
-              <li class="list__item">PostgreSQL</li>
-          </ul>
+                                    <div class="project__discription">
+                                        Personal website V1 using CSS floating method. learned quite a lot about HTML, CSS, and JavaScript. Since then, I think my web development and design skills have improved immensely.
+                                    </div>
+                                </header>
+                                <footer>
+                                    <ul class="project__language">
+                                        <li class="project__language--list">JavaScript</li>
+                                        <li class="project__language--list">CSS</li>
+                                        <li class="project__language--list">HTML5</li>
+                                    </ul>
+                                </footer>
+                            </div>
+                        </div>
 
-          <svg class="sidebar__icon-1">
-              <use xlink:href="img/sprite.svg#icon-github"> 
-              </use>
-          </svg>
-          <svg class="sidebar__icon-1">
-              <use xlink:href="img/sprite.svg#icon-globe"> 
-              </use>
-          </svg> -->
-    
+                        <div class="project">
+                                <div class="project--inner">
+                                    <header>
+                                        <div class="project__icons">
+                                            <div class="project__icons--left">
+                                                <svg class="project__icons-folder">
+                                                    <use
+                                                        xlink:href="img/sprite.svg#icon-folder"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="project__icons--right">
+                                                <a href="https://github.com/zakwan93/Hacker_Rank_Solution" class="project__icons--link
+                                                    project__icons--right" target="_blank">
+                                                    <svg class="project__icons-github">
+                                                        <use
+                                                            xlink:href="img/sprite.svg#icon-github">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                                <!-- <a href="https://www.zakwanbhaiyat.com" class="project__icons--link
+                                                    project__icons--right" target="_blank">
+                                                    <svg class="project__icons-globe">
+                                                        <use
+                                                            xlink:href="img/sprite.svg#icon-globe">
+                                                        </use>
+                                                    </svg>
+                                                </a> -->
+                                            </div>
+                                        </div>
+                                        <div class="project__name">
+                                            <h5 class="heading-6 project__name--heading">HackerRank Solution</h5>
+                                        </div>
+            
+                                        <div class="project__discription">
+                                            Always spend time on different programming challenges on HackerRank to improve my fundamental about programming and getting better everytime.
+                                        </div>
+                                    </header>
+                                    <footer>
+                                        <ul class="project__language">
+                                            <li class="project__language--list">JavaScript</li>
+                                            <li class="project__language--list">Ruby</li>
+                                            <li class="project__language--list">Python</li>
+                                        </ul>
+                                    </footer>
+                                </div>
+                            </div>
 
-    <section class="projects">
-      PROJECTS
-    </section>
-    <footer class="footer">
-      FOOTER
-    </footer>
-  </body>
+            </div>
+        </section>
+
+
+        <footer class="footer">
+            FOOTER
+        </footer>
+    </body>
 </html>

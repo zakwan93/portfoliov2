@@ -8,24 +8,27 @@
     width: 5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
-
-
     transition: all .2s;
     
     &__icon{
         fill: $color-grey-dark-2;
-        margin: 1.5rem 1rem;
+        margin: 1.5rem auto;
         height: 2rem;
+        // width: 5rem;
         transform: translateY(-1rem);
         padding: 0;
         transition: all .2s;
-
-        &:hover{
-            transform: scale(1.5);
-            fill: $color-grey-light-1;
+    
+            &:hover{
+                transform: scale(1.5);
+                fill: $color-grey-light-1;
+            }
+        &__link{
+            text-decoration: none;
+            // color: $color-grey-dark-2;
         }
-
         
     }
     &::after{
@@ -34,10 +37,12 @@
         width: 1px;
         height: 25vh;
         background-color:$color-grey-dark-2;
-        // margin: 0px auto;
-        // margin-left: 1rem;
-        margin-left: 2.5rem;
     }
+
+    &__link{
+        text-decoration: none;
+    }
+    
 
 }
 
