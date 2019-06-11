@@ -20,7 +20,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh repeat(7, min-content);
+  grid-template-rows: min-content 85vh repeat(7, min-content);
   grid-template-columns: [sidebar-start] minmax(min-content, 8rem) [sidebar-end full-start] 1fr [full-end email-start] minmax(min-content, 8rem) [email-end]; }
 
 .heading-1, .heading-2, .heading-3, .heading-4, .projects__heading, .heading-5, .heading-6 {
@@ -61,7 +61,7 @@ body {
     height: 1px;
     border: 1px solid rgba(214, 202, 176, 0.2);
     display: block;
-    width: 70%; }
+    width: 60%; }
   .heading-4--light {
     color: #D6CAB0; }
   .heading-4--dark {
@@ -113,6 +113,8 @@ body {
   position: relative;
   overflow: hidden;
   transition: all .2s; }
+  .btn:hover {
+    background-image: linear-gradient(to left, #54504c, #86817C); }
   .btn > * {
     height: 100%;
     width: 100%;
@@ -155,6 +157,56 @@ body {
 .mb-hg {
   margin-bottom: 8rem; }
 
+.nav {
+  grid-column: sidebar-start / email-end;
+  padding: 2.5rem;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  -moz-box-align: center;
+  align-items: center;
+  position: relative; }
+  .nav__box--logo {
+    font-size: 5rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: #FCFAF1;
+    line-height: 1; }
+  .nav .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: outside none none;
+    transition: all .5s; }
+    .nav .navigation--list {
+      margin: 0px 2rem;
+      position: relative;
+      counter-increment: item 1;
+      transition: all .5s; }
+      .nav .navigation--list::before {
+        content: "0" counter(item) ".";
+        text-align: right;
+        color: rgba(252, 250, 241, 0.7);
+        font-size: 1.6rem;
+        margin-right: .5rem; }
+      .nav .navigation--list-link {
+        transition: all .5s; }
+        .nav .navigation--list-link, .nav .navigation--list-link:link, .nav .navigation--list-link:visited {
+          color: #86817C;
+          font-size: 1.8rem;
+          text-decoration: none; }
+      .nav .navigation--list:hover {
+        transform: translateY(-0.5rem); }
+  .nav__link {
+    transition: all .5s; }
+    .nav__link, .nav__link:link, .nav__link:visited {
+      padding: 1rem 2rem;
+      text-decoration: none;
+      color: #D6CAB0;
+      font-size: 1.6rem;
+      border: 1px solid rgba(214, 202, 176, 0.5); }
+      .nav__link:hover, .nav__link:link:hover, .nav__link:visited:hover {
+        background-color: rgba(84, 80, 76, 0.5);
+        transform: translateY(-0.5rem); }
+
 .sidebar {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / 1;
@@ -191,6 +243,7 @@ body {
 
 .header {
   grid-column: full-start / full-end;
+  grid-row: 2 / 3;
   position: relative; }
   .header__logo-box {
     position: absolute;
@@ -227,7 +280,7 @@ body {
       border-top: 2.5rem solid #D6CAB0; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -311,13 +364,35 @@ body {
         transform: translateY(-0.8rem) translateX(-0.8rem);
         filter: none; }
 
-.experiance {
+.experiances {
   grid-column: full-start / full-end;
-  height: 60vh;
-  margin: 5rem;
+  margin: 10rem 15rem;
   padding: 5rem; }
-  .experiance__heading {
-    padding: 0 20%; }
+
+.experiance {
+  display: flex;
+  margin-top: 2rem; }
+  .experiance__about {
+    flex: 0 0 70%; }
+    .experiance__about--name {
+      font-size: 2rem;
+      color: #FCFAF1; }
+    .experiance__about--company {
+      font-size: 1.6rem;
+      transition: all .2s;
+      font-style: italic; }
+      .experiance__about--company-link, .experiance__about--company-link:link, .experiance__about--company-link:visited {
+        text-decoration: none;
+        color: #D6CAB0;
+        cursor: pointer; }
+      .experiance__about--company:hover {
+        transform: translateY(-0.2rem); }
+  .experiance__duration {
+    flex: 1;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    color: #86817C;
+    text-align: right; }
 
 .otherprojects {
   grid-column: full-start / full-end;

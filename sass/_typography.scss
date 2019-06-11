@@ -50,7 +50,7 @@
         height: 1px;
         border:1px solid rgba($color-grey-light-1, .2);
         display: block;
-        width: 70%;
+        width: 60%;
         // background-color: currentColor;
     }
 
@@ -120,6 +120,10 @@
     position: relative;
     overflow: hidden;
     transition: all .2s;
+
+    &:hover{
+        background-image: linear-gradient(to left, $color-grey-dark-1, $color-grey-dark-2);
+    }
 
 
     & > *{

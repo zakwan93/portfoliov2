@@ -37,7 +37,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-rows: 100vh repeat(7, min-content);
+    grid-template-rows: min-content 85vh repeat(7, min-content);
     // grid-template-columns: [sidebar-start]5rem[sidebar-end full-start] 
     // repeat(12, [col-start] minmax(min-content, 14rem) [col-end]) 
     // [full-end email-start] 5rem [email-end];
