@@ -439,8 +439,7 @@ body {
     filter: grayscale(100%) contrast(1) brightness(100%); }
     .recentprojects__paragraph:hover {
       box-shadow: rgba(214, 202, 176, 0.2) 0 1rem 3rem -1.5rem;
-      background-color: #86817C;
-      color: #282726;
+      transform: translateY(-0.5rem);
       transition: all .5s; }
   .recentprojects__technology--list {
     display: flex;
