@@ -5,7 +5,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    transition: all .5s;
+
+    // &__link{
+    //     opacity: 0;
+    //     animation: pulse 2s 3s ease-out infinite;
+    // }
+
     &__icon{
                         fill: $color-grey-light-1;
                         height: 4rem;
@@ -15,11 +21,15 @@
                         position: absolute;
                         bottom: 0;
                         left: 50%;
-                        transform: translate(-50%, -50%);
+                        // transform: translate(-50%, -50%);
                         text-align: center;
+                        opacity: 0;
+                        transition: all .5s;
                 
                         &:hover{
                             transform: translate(-50%, -50%) scale(1.5);
+                            // animation: scale-in 1s cubic-bezier(0, .5, 0, 1);
+                            // transition: all .5s;
                         }
                 
                     }
@@ -31,79 +41,15 @@
 }
 
 
-// .header {
-//     grid-column: full-start / full-end;
-//     position: relative;
+.animate-pop-in{
+    animation: pop-in 1s ease-out forwards;
+}
+.animate-fade-slide-up{
+    animation: fade-slide-up 1s 1s ease-out forwards,
+               pulse 2s 3s ease-out infinite;
+}
 
-//     &__text-box {
-//       position: absolute;
-//       top: 40%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       text-align: center;
-//     }
 
-//     &__icon{
-//                 fill: $color-grey-light-1;
-//                 height: 4rem;
-//                 padding: 0;
-//                 transition: all .2s;
-//                 width: 100%;
-//                 position: absolute;
-//                 bottom: 0;
-//                 left: 50%;
-//                 transform: translate(-50%, -50%);
-//                 text-align: center;
-        
-//                 &:hover{
-//                     transform: translate(-50%, -50%) scale(1.5);
-//                 }
-        
-//             }
-
-//     @media only screen and(max-width: $bp-large){
-//         grid-column: sidebar-start / email-end
-//     }
-
+// .animated-fad-in{
+//     animation: fad-in 1s .5s ease-out forwards;
 // }
-  
-
-// &__logo-box {
-  //   position: absolute;
-  //   top: 6rem;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   text-align: center;
-  // }
-
-  // &__logo {
-  //     width: 8rem;
-  //     height: 4rem;
-  //     padding-top: .4rem;
-  //     background: $color-grey-light-1;
-  //     position: relative;
-  //     color: $color-primary-dark;
-      
-  //     &:before {
-  //                 content: "";
-  //                 position: absolute;
-  //                 top: -2.5rem;
-  //                 left: 0;
-  //                 width: 0;
-  //                 height: 0;
-  //                 border-left: 5rem solid transparent;
-  //                 border-right: 5rem solid transparent;
-  //                 border-bottom: 2.5rem solid $color-grey-light-1;
-  //               }
-  //              &:after {
-  //                 content: "";
-  //                 position: absolute;
-  //                 bottom: -2.5rem;
-  //                 left: 0;
-  //                 width: 0;
-  //                 height: 0;
-  //                 border-left: 5rem solid transparent;
-  //                 border-right: 5rem solid transparent;
-  //                 border-top: 2.5rem solid $color-grey-light-1;
-  //              }
-  // }

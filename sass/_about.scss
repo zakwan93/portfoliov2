@@ -72,16 +72,18 @@
             margin-right: .7rem;
 
             //Older Browser
-            // background-image: url(../img/chevron-thin-right.svg);
-            // background-size: cover;
+            background-image: url(../img/chevron-thin-right.svg);
+            background-size: cover;
 
             //Newer Version
-            background-color: $color-grey-light-1;
-            mask-image: url(../img/chevron-thin-right.svg);
-            -webkit-mask-image: url(../img/chevron-thin-right.svg);
-            mask-size: cover;
-            -webkit-mask-size: cover;
-
+            @supports (-webkit-mask-image: url()) or (-webkit-mask-image: url()){
+                background-color: $color-grey-light-1;
+                mask-image: url(../img/chevron-thin-right.svg);
+                -webkit-mask-image: url(../img/chevron-thin-right.svg);
+                mask-size: cover;
+                -webkit-mask-size: cover;
+                background-image: none;
+            }
         }
 
     }
