@@ -1,20 +1,27 @@
 .nav{
     grid-column: sidebar-start / email-end;
-    padding: 2.5rem;
+    padding: 2rem;
     display: flex;
     -moz-box-pack: justify;
     justify-content: space-between;
     -moz-box-align: center;
     align-items: center;
     position: relative; 
+    margin: auto 2rem;
+
+    // @media only screen and (max-width: $bp-large){
+    //     display: none;
+    // }
+
 
     &__box{
 
         &--logo{
             font-size: 5rem;
             font-family: $font-display;
-            color: $color-grey-light-2;
-            line-height: 1;
+            // color: $color-grey-light-2;
+            // line-height: 1;
+            align-self: center;
         }
     }
 

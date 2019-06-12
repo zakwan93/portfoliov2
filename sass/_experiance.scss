@@ -2,6 +2,18 @@
     grid-column: full-start / full-end;
     margin: 10rem 15rem;
     padding: 5rem;
+
+    @media only screen and (max-width: $bp-large){
+        margin: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 0;
+        margin: 3rem;
+    }
+    @media only screen and (max-width: $bp-small){
+        margin: 1.5rem;
+    }
 }
 
 .experiance{
@@ -11,6 +23,10 @@
 
     &__about{
         flex: 0 0 70%;
+
+        @media only screen and (max-width: $bp-medium){
+            flex: 0 0 65%;
+        }
 
         &--name{
             font-size: 2rem;

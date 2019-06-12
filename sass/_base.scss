@@ -12,6 +12,14 @@ $color-grey-dark-2: #86817C;
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
 
+
+
+//Responnsive Breakpoints
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px;
+$bp-medium:50em; //800px;
+$bp-small: 37.5em; // 600px;
+
 *,
 *::before,
 *::after{
@@ -24,6 +32,13 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @media only screen and(max-width: $bp-largest){
+        font-size: 50%;
+    }
+    
+
+    
 }
 
 body{

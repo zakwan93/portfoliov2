@@ -40,4 +40,8 @@
     &__link{
         text-decoration: none;
     }
+
+    @media only screen and (max-width: $bp-large){
+        display: none;
+    }
 }

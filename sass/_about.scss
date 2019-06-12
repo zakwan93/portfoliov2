@@ -3,6 +3,12 @@
     padding: 4.5rem;
     display: flex;
     margin-top: 5rem;
+
+    @media only screen and (max-width: $bp-large){
+        flex-direction: column;
+        padding: 2rem;
+    }
+
     
     &__content{
         font-size: 1.4rem;
@@ -10,6 +16,9 @@
         margin-right: 4.5rem;
         padding: 3rem;
 
+        @media only screen and (max-width: $bp-large){
+            margin-right: 0;
+        }
     
         &--text{
 
@@ -33,6 +42,11 @@
                 }
             }
         }
+
+        @media only screen and (max-width: $bp-large){
+            padding: 0;
+        }
+    
     }
 
     .list{
@@ -76,6 +90,11 @@
         flex: 1;
         padding: 3rem;
         margin: 3.5rem auto;
+
+        @media only screen and (max-width: $bp-small){
+            margin: auto;
+        }
+    
     }
 
     .picture{

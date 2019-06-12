@@ -1,48 +1,7 @@
 .header {
     grid-column: full-start / full-end;
-    grid-row: 2 / 3;
     position: relative;
 
-    &__logo-box {
-      position: absolute;
-      top: 6rem;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-  
-    &__logo {
-        width: 8rem;
-        height: 4rem;
-        padding-top: .4rem;
-        background: $color-grey-light-1;
-        position: relative;
-        color: $color-primary-dark;
-        
-        &:before {
-                    content: "";
-                    position: absolute;
-                    top: -2.5rem;
-                    left: 0;
-                    width: 0;
-                    height: 0;
-                    border-left: 5rem solid transparent;
-                    border-right: 5rem solid transparent;
-                    border-bottom: 2.5rem solid $color-grey-light-1;
-                  }
-                 &:after {
-                    content: "";
-                    position: absolute;
-                    bottom: -2.5rem;
-                    left: 0;
-                    width: 0;
-                    height: 0;
-                    border-left: 5rem solid transparent;
-                    border-right: 5rem solid transparent;
-                    border-top: 2.5rem solid $color-grey-light-1;
-                 }
-    }
-  
     &__text-box {
       position: absolute;
       top: 40%;
@@ -69,6 +28,49 @@
         
             }
 
+    @media only screen and(max-width: $bp-large){
+        grid-column: sidebar-start / email-end
+    }
+
 }
   
 
+// &__logo-box {
+  //   position: absolute;
+  //   top: 6rem;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   text-align: center;
+  // }
+
+  // &__logo {
+  //     width: 8rem;
+  //     height: 4rem;
+  //     padding-top: .4rem;
+  //     background: $color-grey-light-1;
+  //     position: relative;
+  //     color: $color-primary-dark;
+      
+  //     &:before {
+  //                 content: "";
+  //                 position: absolute;
+  //                 top: -2.5rem;
+  //                 left: 0;
+  //                 width: 0;
+  //                 height: 0;
+  //                 border-left: 5rem solid transparent;
+  //                 border-right: 5rem solid transparent;
+  //                 border-bottom: 2.5rem solid $color-grey-light-1;
+  //               }
+  //              &:after {
+  //                 content: "";
+  //                 position: absolute;
+  //                 bottom: -2.5rem;
+  //                 left: 0;
+  //                 width: 0;
+  //                 height: 0;
+  //                 border-left: 5rem solid transparent;
+  //                 border-right: 5rem solid transparent;
+  //                 border-top: 2.5rem solid $color-grey-light-1;
+  //              }
+  // }
