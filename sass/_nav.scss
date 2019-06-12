@@ -9,9 +9,9 @@
     position: relative; 
     margin: auto 2rem;
 
-    // @media only screen and (max-width: $bp-large){
-    //     display: none;
-    // }
+    @media only screen and (max-width: $bp-large){
+        display: none;
+    }
 
 
     &__box{

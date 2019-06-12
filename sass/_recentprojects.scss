@@ -4,11 +4,15 @@
     padding: 4.5rem;
     margin-top: 5rem;
 
+    @media only screen and(max-width: $bp-medium){
+        padding: 1.5rem;
+    }
 
     &__heading{
         padding: 2rem 7%;
         margin-right: 20%;
     }
+    
 
 
     &__img{
@@ -25,6 +29,10 @@
                 filter: none;
                 transform:translateY(-.5rem);
             }
+
+            @media only screen and(max-width: $bp-medium){
+               width: 100%;
+            }
         }
 
         &-2{
@@ -38,6 +46,11 @@
                 filter: none;
                 transform: translateX(-15%) translateY(-.5rem);
             }
+
+            @media only screen and(max-width: $bp-medium){
+                width: 100%;
+                transform: translateX(0);
+             }
         }
         
         &:hover{
@@ -153,17 +166,31 @@
         padding: 0 7%;
         display: grid;
         grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(min-content);
         grid-gap: 2rem;
+
+        @media only screen and(max-width: $bp-medium){
+            padding: 0;
+        }
 
         &--image{
             grid-column: 1 / 7;
-
+            
+            @media only screen and(max-width: $bp-medium){
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+            }
         }
 
         &--content{
             grid-column: 7 / -1;
             text-align: right;
             z-index: 2;
+
+            @media only screen and(max-width: $bp-medium){
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+            }
         }
     }
 
@@ -171,20 +198,38 @@
         padding: 0 7%;
         display: grid;
         grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(min-content);
         grid-gap: 2rem;
         margin-top: 20rem;
+
+        @media only screen and(max-width: $bp-medium){
+            margin-top: 5rem;
+            padding: 0;
+        }
 
         &--content{
             grid-column: 1 / 7;
             // text-align: left;
             z-index: 2;
             position: relative;
+
+            @media only screen and(max-width: $bp-medium){
+                grid-column: 1 / -1;
+                grid-row: 1 / 2;
+            }
+
+           
             
         }
 
         &--image{
             grid-column: 7 / -1;
             // grid-row: 1 / -1;
+
+            @media only screen and(max-width: $bp-medium){
+                grid-column: 1 / -1;
+                grid-row: 2 / 3;
+            }
         }
     }
 

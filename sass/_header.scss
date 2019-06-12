@@ -1,38 +1,71 @@
 .header {
     grid-column: full-start / full-end;
     position: relative;
-
-    &__text-box {
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     &__icon{
-                fill: $color-grey-light-1;
-                height: 4rem;
-                padding: 0;
-                transition: all .2s;
-                width: 100%;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
+                        fill: $color-grey-light-1;
+                        height: 4rem;
+                        padding: 0;
+                        transition: all .2s;
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                
+                        &:hover{
+                            transform: translate(-50%, -50%) scale(1.5);
+                        }
+                
+                    }
         
-                &:hover{
-                    transform: translate(-50%, -50%) scale(1.5);
-                }
-        
+            @media only screen and(max-width: $bp-large){
+                grid-column: sidebar-start / email-end
             }
-
-    @media only screen and(max-width: $bp-large){
-        grid-column: sidebar-start / email-end
-    }
-
+        
 }
+
+
+// .header {
+//     grid-column: full-start / full-end;
+//     position: relative;
+
+//     &__text-box {
+//       position: absolute;
+//       top: 40%;
+//       left: 50%;
+//       transform: translate(-50%, -50%);
+//       text-align: center;
+//     }
+
+//     &__icon{
+//                 fill: $color-grey-light-1;
+//                 height: 4rem;
+//                 padding: 0;
+//                 transition: all .2s;
+//                 width: 100%;
+//                 position: absolute;
+//                 bottom: 0;
+//                 left: 50%;
+//                 transform: translate(-50%, -50%);
+//                 text-align: center;
+        
+//                 &:hover{
+//                     transform: translate(-50%, -50%) scale(1.5);
+//                 }
+        
+//             }
+
+//     @media only screen and(max-width: $bp-large){
+//         grid-column: sidebar-start / email-end
+//     }
+
+// }
   
 
 // &__logo-box {

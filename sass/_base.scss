@@ -59,12 +59,15 @@ body{
     grid-template-columns: [sidebar-start]minmax(min-content, 8rem)[sidebar-end full-start] 
     1fr [full-end email-start] minmax(min-content, 8rem) [email-end];
 
+    @media only screen and(max-width: $bp-large){
+        grid-template-rows: 100vh repeat(7, min-content);
+    }
 }
 
 // @media only screen and(max-width: $bp-large){
-//     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-//     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 
-//     [center-end] minmax(6rem, 1fr) [full-end];
+//     grid-template-rows: 100vh repeat(7, min-content);
+    // grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) 
+    // [center-end] minmax(6rem, 1fr) [full-end];
 // }
 
 // @media only screen and(max-width: $bp-medium){
