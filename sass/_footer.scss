@@ -8,9 +8,11 @@
     align-items: center;
     justify-content: center;
 
-    // @media only screen and (max-width: $bp-large){
-    //     grid-row: 9 / 10 ;
-    // }
+    @media only screen and (max-width: $bp-large){
+        grid-row: 9 / 10 ;
+        height: 100%;
+        padding: 0 0 3rem 0;
+    }
 
 
     &__paragraph{
