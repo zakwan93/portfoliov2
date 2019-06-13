@@ -14,6 +14,9 @@
 
     &__text-box{
         opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .heading__secondary{
