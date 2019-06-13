@@ -4,16 +4,16 @@
     padding: 5rem;
 
     @media only screen and (max-width: $bp-large){
-        margin: 5rem;
+        grid-column: sidebar-start / email-end;
     }
 
     @media only screen and (max-width: $bp-medium){
-        padding: 0;
+        padding: 1rem;
         margin: 3rem;
     }
-    @media only screen and (max-width: $bp-small){
-        margin: 1.5rem;
-    }
+    // @media only screen and (max-width: $bp-small){
+    //     margin: 2rem;
+    // }
 }
 
 .experiance{
