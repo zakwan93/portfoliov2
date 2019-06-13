@@ -7,8 +7,8 @@
     min-width: 65%;
     max-width: 80%;
 
-    @media only screen and (max-width: $bp-small){
-        padding: 0;
+        @media only screen and (max-width: $bp-medium){
+            grid-column: sidebar-start / email-end;
+        }
     }
     
-}

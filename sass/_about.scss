@@ -8,6 +8,7 @@
     @media only screen and (max-width: $bp-large){
         flex-direction: column;
         padding: 2rem;
+        grid-column: sidebar-start / email-end;
     }
 
     
@@ -42,10 +43,6 @@
                     }
                 }
             }
-        }
-
-        @media only screen and (max-width: $bp-large){
-            padding: 0;
         }
     
     }

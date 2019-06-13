@@ -4,13 +4,22 @@
     padding: 4.5rem;
     margin-top: 5rem;
 
-    @media only screen and(max-width: $bp-medium){
-        padding: 1.5rem;
+    @media only screen and (max-width: $bp-large){
+        grid-column: sidebar-start / email-end;
     }
+    // @media only screen and(max-width: $bp-medium){
+    //     padding: 1.5rem;
+    // }
 
     &__heading{
         padding: 2rem 7%;
         margin-right: 20%;
+
+        @media only screen and (max-width: $bp-small){
+            grid-column: sidebar-start / email-end;
+            padding: 0;
+            margin-right: 0;
+        }
     }
     
 
@@ -28,6 +37,10 @@
             &:hover{
                 filter: none;
                 transform:translateY(-.5rem);
+
+                @media only screen and(max-width: $bp-medium){
+                    transform: translateX(0);
+                 }
             }
 
             @media only screen and(max-width: $bp-medium){
@@ -45,18 +58,19 @@
             &:hover{
                 filter: none;
                 transform: translateX(-15%) translateY(-.5rem);
+
+                @media only screen and(max-width: $bp-medium){
+                    width: 100%;
+                    transform: translateX(0) translateY(0rem);
+                 }
             }
 
             @media only screen and(max-width: $bp-medium){
                 width: 100%;
-                transform: translateX(0);
+                transform: translateX(0) translateY(0rem);
              }
         }
-        
-        &:hover{
-            filter: none;
-            transform: translateY(-.5rem);
-        }
+
     }
 
     &__paragraph{
@@ -169,9 +183,9 @@
         grid-template-rows: repeat(min-content);
         grid-gap: 2rem;
 
-        @media only screen and(max-width: $bp-medium){
-            padding: 0;
-        }
+        // @media only screen and(max-width: $bp-medium){
+        //     padding: 0;
+        // }
 
         &--image{
             grid-column: 1 / 7;
@@ -201,11 +215,6 @@
         grid-template-rows: repeat(min-content);
         grid-gap: 2rem;
         margin-top: 20rem;
-
-        @media only screen and(max-width: $bp-medium){
-            margin-top: 5rem;
-            padding: 0;
-        }
 
         &--content{
             grid-column: 1 / 7;

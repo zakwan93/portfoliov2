@@ -67,8 +67,10 @@
     font-size: 2.2rem;
     text-transform: capitalize;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    
 
     &::before{
         content: "";
@@ -76,7 +78,7 @@
         height: 1px;
         border: 1px solid rgba($color-grey-light-1, .2);
         width: 25%;
-        margin-top: 1.5rem;
+        margin: auto;
 
         @media only screen and (max-width: $bp-small){
             margin-top: 1rem;
@@ -88,7 +90,8 @@
         height: 1px;
         border: 1px solid rgba($color-grey-light-1, .2);
         width: 25%;
-        margin-top: 1.5rem;
+        margin: auto;
+        
 
         @media only screen and (max-width: $bp-small){
             margin-top: 1rem;
