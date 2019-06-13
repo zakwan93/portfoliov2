@@ -22,10 +22,10 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === "function" && el instanceof jQuery) {
-    el = el[0];
-  }
+  // If using jQuery
+  // if (typeof jQuery === "function" && el instanceof jQuery) {
+  //   el = el[0];
+  // }
   var rect = el.getBoundingClientRect();
   return (
     (rect.top <= 0
@@ -39,3 +39,20 @@ function isElementInViewport(el) {
   );
 }
 
+
+// To remove id of section from url onclick
+// Original JavaScript code by Chirp Internet: www.chirp.com.au
+
+window.addEventListener("DOMContentLoaded", function(e) {
+  var links = document.getElementsByTagName("A");
+  for(var i=0; i < links.length; i++) {
+    if(!links[i].hash) continue;
+    if(links[i].origin + links[i].pathname != self.location.href) continue;
+    (function(anchorPoint) {
+      links[i].addEventListener("click", function(e) {
+        anchorPoint.scrollIntoView(true);
+        e.preventDefault();
+      }, false);
+    })(document.getElementById(links[i].hash.replace(/#/, "")));
+  }
+}, false);
