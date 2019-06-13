@@ -77,6 +77,10 @@
         border: 1px solid rgba($color-grey-light-1, .2);
         width: 25%;
         margin-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-small){
+            margin-top: 1rem;
+        }
     }
     &::after{
         content: "";
@@ -85,8 +89,15 @@
         border: 1px solid rgba($color-grey-light-1, .2);
         width: 25%;
         margin-top: 1.5rem;
+
+        @media only screen and (max-width: $bp-small){
+            margin-top: 1rem;
+        }
     }
     
+    @media only screen and (max-width: $bp-small){
+        font-size: 1.8rem;
+    }
 
 }
 

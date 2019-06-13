@@ -6,4 +6,9 @@
     margin: 0 auto;
     min-width: 65%;
     max-width: 80%;
+
+    @media only screen and (max-width: $bp-small){
+        padding: 0;
+    }
+    
 }

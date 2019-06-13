@@ -6,11 +6,19 @@
     align-items: center;
     justify-content: center;
     transition: all .5s;
-
+    
     // &__link{
     //     opacity: 0;
     //     animation: pulse 2s 3s ease-out infinite;
     // }
+
+    &__text-box{
+        opacity: 0;
+    }
+
+    .heading__secondary{
+        opacity: 0;
+    }
 
     &__icon{
                         fill: $color-grey-light-1;
@@ -42,7 +50,7 @@
 
 
 .animate-pop-in{
-    animation: pop-in 1s ease-out forwards;
+    animation: pop-in 1s .75s ease-out forwards;
 }
 .animate-fade-slide-up{
     animation: fade-slide-up 1s 1s ease-out forwards,

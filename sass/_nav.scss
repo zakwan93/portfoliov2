@@ -9,12 +9,11 @@
     position: relative; 
     margin: auto 2rem;
 
-    @media only screen and (max-width: $bp-large){
-        display: none;
-    }
 
 
     &__box{
+        opacity: 0;
+        animation: fade-in .5s .25s ease-in-out forwards;
 
         &--logo{
                 font-size: 5rem;
@@ -30,6 +29,9 @@
         flex-wrap: wrap;
         list-style: outside none none;
         transition: all .5s;
+        opacity: 0;
+
+        animation: fade-in 1s 1.25s ease-in-out forwards;
 
         &--list{
             margin: 0px 2rem;
@@ -61,10 +63,18 @@
                 transform: translateY(-.5rem);
             }   
         }
+
+
+    @media only screen and (max-width: $bp-large){
+        display: none;
+    }
     }
 
     &__link{
         transition: all .5s;
+        opacity: 0;
+
+        animation: fade-in 1s .5s ease-in-out forwards;
 
         &,
         &:link,
@@ -83,3 +93,8 @@
         }
     }
 }
+
+
+// .animate-fade-in{
+//     animation: fad-in 1s ease-in-out forwards;
+// }

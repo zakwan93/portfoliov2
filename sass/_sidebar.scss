@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: flex-end;
     transition: all .2s;
+
+    opacity: 0;
+    animation: pop-in .5s 1.75s ease-in-out forwards;
     
     &__icon{
         fill: $color-grey-dark-2;

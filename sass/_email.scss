@@ -11,6 +11,9 @@
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
 
+    opacity: 0;
+    animation: pop-in .5s 1.75s ease-in-out forwards;
+
     &::after{
         content: "";
         width: .1rem;

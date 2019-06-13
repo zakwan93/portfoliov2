@@ -1,6 +1,7 @@
 .about{
     grid-column: full-start / full-end;
     padding: 4.5rem;
+    // padding-top: 3rem;
     display: flex;
     margin-top: 5rem;
 
@@ -127,6 +128,11 @@
                     // mix-blend-mode: normal;
                     // -moz-appearance-mix-blend-mode: normal;
                 }
+
+                @media only screen and (max-width: $bp-small){
+                    filter: none;
+                }
+
             }
         }
     }
