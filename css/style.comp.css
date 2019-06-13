@@ -520,7 +520,8 @@ body {
         margin: 0 auto; }
       .projects .project__icons--link {
         padding: 1rem;
-        transition: all .2s; }
+        transition: all .2s;
+        text-decoration: none; }
         .projects .project__icons--link :hover {
           fill: #D6CAB0; }
     .projects .project__name--heading {
