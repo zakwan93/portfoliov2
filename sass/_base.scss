@@ -75,9 +75,9 @@ body{
     grid-template-columns: [sidebar-start]minmax(min-content, 8rem)[sidebar-end full-start] 
     1fr [full-end email-start] minmax(min-content, 8rem) [email-end];
 
-    // @media only screen and(max-width: $bp-large){
-    //     grid-template-rows: 100vh repeat(7, min-content);
-    // }
+    @media only screen and(max-width: $bp-large){
+        grid-template-rows: min-content 85vh repeat(8, min-content);
+    }
 }
 
 // @media only screen and(max-width: $bp-large){
