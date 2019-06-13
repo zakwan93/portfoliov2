@@ -10,5 +10,9 @@
         @media only screen and (max-width: $bp-medium){
             grid-column: sidebar-start / email-end;
         }
+
+    .stand__out{
+        color: $color-grey-light-2;
+    }
     }
     

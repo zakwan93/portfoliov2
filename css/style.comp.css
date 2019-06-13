@@ -231,7 +231,7 @@ body {
   .nav__link {
     transition: all .5s;
     opacity: 0;
-    animation: fade-in 1s .5s ease-in-out forwards; }
+    animation: fade-in .5s .5s ease-in-out forwards; }
     .nav__link, .nav__link:link, .nav__link:visited {
       padding: 1rem 2rem;
       text-decoration: none;
@@ -405,6 +405,7 @@ body {
     margin: 3.5rem auto; }
     @media only screen and (max-width: 37.5em) {
       .about__picture {
+        padding: 3rem;
         margin: auto; } }
   .about .picture--item {
     border-radius: 3px;
@@ -753,6 +754,8 @@ body {
   @media only screen and (max-width: 50em) {
     .contact {
       grid-column: sidebar-start / email-end; } }
+  .contact .stand__out {
+    color: #FCFAF1; }
 
 @keyframes pop-in {
   0% {
