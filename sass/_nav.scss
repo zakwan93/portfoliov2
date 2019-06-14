@@ -57,10 +57,14 @@
                     font-size: 1.8rem;
                     text-decoration: none;
                 }
+
+                // &:hover{
+                //     color: $color-grey-light-1;
+                // }
             }
 
             &:hover{
-                transform: translateY(-.5rem);
+                transform: translateY(-.5rem);       
             }   
         }
 
