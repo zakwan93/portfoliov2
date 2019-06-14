@@ -88,14 +88,8 @@
 
     &__picture{
         flex: 1;
+        text-align: -webkit-center;
         padding: 3rem;
-        margin: 3.5rem auto;
-
-        @media only screen and (max-width: $bp-small){
-            padding: 3rem;
-            margin: auto;
-        }
-    
     }
 
     .picture{
@@ -127,7 +121,7 @@
                     // -moz-appearance-mix-blend-mode: normal;
                 }
 
-                @media only screen and (max-width: $bp-small){
+                @media only screen and (max-width: $bp-medium){
                     filter: none;
                 }
 

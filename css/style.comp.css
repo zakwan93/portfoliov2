@@ -237,7 +237,8 @@ body {
       text-decoration: none;
       color: #D6CAB0;
       font-size: 1.6rem;
-      border: 1px solid rgba(214, 202, 176, 0.5); }
+      border: 1px solid rgba(214, 202, 176, 0.5);
+      border-radius: .3rem; }
       .nav__link:hover, .nav__link:link:hover, .nav__link:visited:hover {
         background-color: rgba(84, 80, 76, 0.5);
         transform: translateY(-0.5rem); }
@@ -401,12 +402,8 @@ body {
           background-image: none; } }
   .about__picture {
     flex: 1;
-    padding: 3rem;
-    margin: 3.5rem auto; }
-    @media only screen and (max-width: 37.5em) {
-      .about__picture {
-        padding: 3rem;
-        margin: auto; } }
+    text-align: -webkit-center;
+    padding: 3rem; }
   .about .picture--item {
     border-radius: 3px;
     margin: 8vw;
@@ -426,7 +423,7 @@ body {
       .about .picture--item-1:hover {
         transform: translateY(-0.8rem) translateX(-0.8rem);
         filter: none; }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 50em) {
         .about .picture--item-1 {
           filter: none; } }
 
@@ -619,6 +616,9 @@ body {
       height: 100%;
       filter: grayscale(100%) contrast(1) brightness(100%);
       transition: all .5s; }
+      @media only screen and (max-width: 50em) {
+        .recentprojects__img-1 {
+          filter: none; } }
       .recentprojects__img-1:hover {
         filter: none;
         transform: translateY(-0.5rem); }
@@ -634,6 +634,9 @@ body {
       transform: translateX(-15%);
       filter: grayscale(100%) contrast(1) brightness(100%);
       transition: all .5s; }
+      @media only screen and (max-width: 50em) {
+        .recentprojects__img-2 {
+          filter: none; } }
       .recentprojects__img-2:hover {
         filter: none;
         transform: translateX(-15%) translateY(-0.5rem); }
@@ -755,8 +758,6 @@ body {
   @media only screen and (max-width: 50em) {
     .contact {
       grid-column: sidebar-start / email-end; } }
-  .contact .stand__out {
-    color: #FCFAF1; }
 
 @keyframes pop-in {
   0% {

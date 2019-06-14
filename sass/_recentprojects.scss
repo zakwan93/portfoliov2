@@ -34,6 +34,10 @@
             filter: grayscale(100%) contrast(1) brightness(100%);
             transition: all .5s;
 
+            @media only screen and(max-width: $bp-medium){
+                filter: none;;
+             }
+
             &:hover{
                 filter: none;
                 transform:translateY(-.5rem);
@@ -54,6 +58,10 @@
             transform: translateX(-15%);
             filter: grayscale(100%) contrast(1) brightness(100%);
             transition: all .5s;
+
+            @media only screen and(max-width: $bp-medium){
+                filter: none;;
+             }
 
             &:hover{
                 filter: none;
