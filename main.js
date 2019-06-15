@@ -56,3 +56,19 @@ window.addEventListener("DOMContentLoaded", function(e) {
     })(document.getElementById(links[i].hash.replace(/#/, "")));
   }
 }, false);
+
+
+// Toggle on click 
+
+var btn = document.getElementById('btn');
+// var show = document.getElementById("showless");
+var hidden = document.querySelectorAll('.hidden');
+
+btn.addEventListener("click", function(){
+	for(let i =0; i<hidden.length; i++){
+		hidden[i].classList.toggle("show");
+	}
+	// document.querySelector('.showless').classList.toggle("show");
+btn.innerHTML == "Show More" ? btn.innerHTML = "Show Less" : btn.innerHTML = "Show More";
+
+});

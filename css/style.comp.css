@@ -541,6 +541,28 @@ body {
       transform: translateY(-0.5rem);
       box-shadow: rgba(2, 12, 27, 0.7) 0px 10px 30px -15px; }
 
+.btn__toggle {
+  padding: 1.3rem 2.2rem;
+  color: #D6CAB0;
+  background-color: transparent;
+  font-size: 1.6rem;
+  border: 1px solid rgba(214, 202, 176, 0.5);
+  border-radius: .3rem;
+  transition: all .5s;
+  margin: 10rem auto 0 auto;
+  animation: fade-in .5s .5s ease-in-out forwards; }
+  .btn__toggle:hover {
+    background-color: rgba(84, 80, 76, 0.5);
+    transform: translateY(-0.5rem); }
+  .btn__toggle:active, .btn__toggle:focus {
+    outline: none; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: flex; }
+
 .email {
   grid-column: email-start / email-end;
   grid-row: 1 / 1;
