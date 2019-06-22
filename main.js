@@ -72,3 +72,20 @@ btn.addEventListener("click", function(){
 btn.innerHTML == "Show More" ? btn.innerHTML = "Show Less" : btn.innerHTML = "Show More";
 
 });
+
+
+
+//Mobile side-nav
+
+var hamburgerButton = document.querySelector(".hamburger__button");
+var mobileNav = document.querySelector(".mobile");
+var header = document.querySelector(".header");
+
+hamburgerButton.addEventListener("click", function(){
+    mobileNav.classList.toggle('open');
+});
+
+mobileNav.addEventListener("click", function(){
+    mobileNav.classList.remove("open");
+    header.classList.remove("open");
+});
