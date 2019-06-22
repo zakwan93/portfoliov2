@@ -240,11 +240,15 @@ body {
     .nav .hamburger__button:focus {
       outline: none; }
     .nav .hamburger__button--bar {
-      width: 100%;
+      width: 80%;
       height: 0.2rem;
       background: white;
       display: block;
       margin: 0.6rem 0; }
+      .nav .hamburger__button--bar:first-child {
+        width: 100%; }
+      .nav .hamburger__button--bar:last-child {
+        width: 60%; }
     @media only screen and (min-width: 62.5em) {
       .nav .hamburger__button {
         display: none; } }
