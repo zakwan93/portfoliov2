@@ -7,11 +7,6 @@
   justify-content: center;
   transition: all 0.5s;
 
-  // &__link{
-  //     opacity: 0;
-  //     animation: pulse 2s 3s ease-out infinite;
-  // }
-
   &__text-box {
     // height: 40%;
     opacity: 0;
@@ -62,7 +57,7 @@
 }
 
 .animate-pop-in {
-  animation: pop-in 1s 0.75s ease-out forwards;
+  animation: pop-in 1s 1.5s ease-out forwards;
 }
 .animate-fade-slide-up {
   animation: fade-slide-up 1s 1s ease-out forwards,

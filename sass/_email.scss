@@ -1,49 +1,46 @@
-.email{
-    grid-column: email-start / email-end;
-    grid-row: 1 / 1;
-    position: fixed;
-    right: 0;
-    height: 100vh;
-    width: 5rem;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
+.email {
+  grid-column: email-start / email-end;
+  grid-row: 1 / 1;
+  position: fixed;
+  right: 0;
+  height: 100vh;
+  width: 5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
 
-    opacity: 0;
-    animation: pop-in .5s 1.75s ease-in-out forwards;
+  opacity: 0;
+  animation: fade-in 0.5s 0.7s ease-in-out forwards;
 
-    &::after{
-        content: "";
-        width: .1rem;
-        height: 12vh;
-        background-color: $color-grey-dark-2;
-        margin: 1.5rem auto 0;
-        
+  &::after {
+    content: "";
+    width: 0.1rem;
+    height: 12vh;
+    background-color: $color-grey-dark-2;
+    margin: 1.5rem auto 0;
+  }
+
+  &-link {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $color-grey-dark-2;
+      font-size: 1.6rem;
+      letter-spacing: 0.2rem;
+      transition: all 0.5s;
     }
 
-    &-link{
-
-        &,
-        &:link,
-        &:visited{
-            text-decoration: none;
-            color: $color-grey-dark-2;
-            font-size: 1.6rem;
-            letter-spacing: .2rem;
-            transition: all .5s;
-        }
-
-        &:hover{
-            // box-shadow: inset 0 53rem 0 0 $color-grey-dark-1;
-            transform: translateY(-.5rem);
-            color: $color-grey-light-1;
-        }
+    &:hover {
+      // box-shadow: inset 0 53rem 0 0 $color-grey-dark-1;
+      transform: translateY(-0.5rem);
+      color: $color-grey-light-1;
     }
+  }
 
-    @media only screen and (max-width: $bp-large){
-        display: none;
-    }
-
+  @media only screen and (max-width: $bp-large) {
+    display: none;
+  }
 }

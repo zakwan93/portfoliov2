@@ -1,70 +1,70 @@
-.sidebar{
-    grid-column: sidebar-start / sidebar-end;
-    grid-row: 1 / 1;
-    position: fixed;
-    height: 100vh;
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / 1;
+  position: fixed;
+  height: 100vh;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  -moz-align-items: center;
+  align-items: center;
+  justify-content: flex-end;
+  transition: all 0.2s;
+
+  opacity: 0;
+  // animation: pop-in .5s 1.75s ease-in-out forwards;
+  animation: fade-in 0.5s 1.1s ease-in-out forwards;
+
+  &__icon {
+    fill: $color-grey-dark-2;
+    margin: 1.5rem auto;
+    height: 2rem;
     width: 5rem;
+    transform: translateY(-1rem);
+    padding: 0;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.5);
+      fill: $color-grey-light-1;
+    }
+    &__link {
+      text-decoration: none;
+    }
+    @media only screen and (max-width: $bp-large) {
+      margin: 0.5rem auto;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12vh;
+    background-color: $color-grey-dark-2;
+
+    @media only screen and (max-width: $bp-large) {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     -moz-align-items: center;
     align-items: center;
-    justify-content: flex-end;
-    transition: all .2s;
-
-    opacity: 0;
-    animation: pop-in .5s 1.75s ease-in-out forwards;
-    
-    &__icon{
-        fill: $color-grey-dark-2;
-        margin: 1.5rem auto;
-        height: 2rem;
-        width: 5rem;
-        transform: translateY(-1rem);
-        padding: 0;
-        transition: all .2s;
-    
-            &:hover{
-                transform: scale(1.5);
-                fill: $color-grey-light-1;
-            }
-        &__link{
-            text-decoration: none;
-        }
-        @media only screen and (max-width: $bp-large){
-            margin: .5rem auto;
-        }
-        
-    }
-    &::after{
-        content: "";
-        display: block;
-        width: 1px;
-        height: 12vh;
-        background-color:$color-grey-dark-2;
-
-        @media only screen and (max-width: $bp-large){
-            display: none;
-        }
-    }
-
-    &__link{
-        text-decoration: none;
-    }
-
-    @media only screen and (max-width: $bp-large){
-        position: relative;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        -moz-align-items: center;
-        align-items: center;
-        justify-content: center;
-        grid-row: 8/9;
-        grid-column: sidebar-start / email-end;
-        opacity: 1;
-        animation: none;
-        background-color: rgba($color-grey-dark-1, .5);
-        padding-top: 3.5rem;
-    }
+    justify-content: center;
+    grid-row: 8/9;
+    grid-column: sidebar-start / email-end;
+    opacity: 1;
+    animation: none;
+    background-color: rgba($color-grey-dark-1, 0.5);
+    padding-top: 3.5rem;
+  }
 }
