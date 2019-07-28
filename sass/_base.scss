@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-  display: grid;
+  // display: grid;
   grid-template-rows: min-content 85vh repeat(7, min-content);
   // grid-template-columns: [sidebar-start]5rem[sidebar-end full-start]
   // repeat(12, [col-start] minmax(min-content, 14rem) [col-end])
@@ -72,6 +72,7 @@ body {
   @media only screen and(max-width: $bp-large) {
     grid-template-rows: min-content 85vh repeat(8, min-content);
   }
+  display: none;
 }
 
 // @media only screen and(max-width: $bp-large){

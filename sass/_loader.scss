@@ -1,0 +1,43 @@
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  &__text {
+    position: relative;
+    text-decoration: none;
+    width: 140px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: $color-grey-light-1;
+    border-radius: 3px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 2px solid transparent;
+      animation: animate 1s linear forwards;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: 0;
+      height: 0;
+      background: transparent;
+      border: 2px solid transparent;
+      animation: animate2 1s linear forwards;
+      animation-delay: 1s;
+    }
+  }
+}
