@@ -1,64 +1,62 @@
-.experiances{
-    grid-column: full-start / full-end;
-    margin: 10rem 15rem;
-    padding: 5rem;
+.experiances {
+  grid-column: full-start / full-end;
+  margin: 10rem 15rem;
+  padding: 5rem;
 
-    @media only screen and (max-width: $bp-large){
-        grid-column: sidebar-start / email-end;
-    }
+  @media only screen and (max-width: $bp-large) {
+    grid-column: sidebar-start / email-end;
+  }
 
-    @media only screen and (max-width: $bp-medium){
-        padding: 1rem;
-        margin: 3rem;
-    }
-    // @media only screen and (max-width: $bp-small){
-    //     margin: 2rem;
-    // }
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1rem;
+    margin: 3rem;
+  }
+  // @media only screen and (max-width: $bp-small){
+  //     margin: 2rem;
+  // }
 }
 
-.experiance{
-    display: flex;
-    margin-top: 2rem;
-    // flex-direction: column;
+.experiance {
+  display: flex;
+  margin-top: 2rem;
+  // flex-direction: column;
 
-    &__about{
-        flex: 0 0 70%;
+  &__about {
+    flex: 0 0 70%;
 
-        @media only screen and (max-width: $bp-medium){
-            flex: 0 0 65%;
-        }
-
-        &--name{
-            font-size: 2rem;
-            color: $color-grey-light-2;
-        }
-        &--company{
-            font-size: 1.6rem;
-            transition: all .2s;
-            font-style: italic;
-            
-            &-link{
-
-                &,
-                &:link,
-                &:visited{
-                    text-decoration: none;
-                    color: $color-grey-light-1;
-                    cursor: pointer;
-                }
-            }
-            &:hover{
-                transform: translateY(-.2rem);
-            }
-        }
-
+    @media only screen and (max-width: $bp-medium) {
+      flex: 0 0 65%;
     }
 
-    &__duration{
-        flex: 1;
-        font-size: 1.4rem;
-        align-self: flex-start;
-        color: $color-grey-dark-2;
-        text-align: right;
+    &--name {
+      font-size: 2rem;
+      color: $color-grey-light-2;
     }
+    &--company {
+      font-size: 1.6rem;
+      transition: all 0.2s;
+      font-style: italic;
+
+      &-link {
+        &,
+        &:link,
+        &:visited {
+          text-decoration: none;
+          color: $color-grey-light-1;
+          cursor: pointer;
+        }
+      }
+      &:hover {
+        transform: translateY(-0.2rem);
+      }
+    }
+  }
+
+  &__duration {
+    flex: 1;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    color: $color-grey-dark-2;
+    text-align: right;
+  }
 }
