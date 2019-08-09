@@ -44,6 +44,11 @@ body {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: $color-primary-dark;
+  color: $color-grey-light-1;
+}
+
 .show-on-scroll {
   opacity: 0;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
