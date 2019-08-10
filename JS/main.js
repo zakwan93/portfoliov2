@@ -87,7 +87,6 @@ btn.addEventListener("click", function() {
 var hamburgerButton = document.querySelector(".hamburger__button");
 var mobileNav = document.querySelector(".mobile");
 var header = document.querySelector(".header");
-// var body = document.querySelector("body");
 
 hamburgerButton.addEventListener("click", function() {
   mobileNav.classList.toggle("open");
@@ -115,23 +114,49 @@ window.addEventListener("load", function() {
 
 //Stickey Navbar
 
-window.onscroll = function() {
-  stickyNav();
-};
+// window.onscroll = function() {
+//   stickyNav();
+// };
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop + 500;
+// var sticky = navbar.offsetTop + 500;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function stickyNav() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    navbar.classList.add("nav-dark");
+// function stickyNav() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky");
+//     navbar.classList.add("nav-dark");
+//   } else {
+//     navbar.classList.remove("sticky");
+//     navbar.classList.remove("nav-dark");
+//   }
+// }
+
+var scrollableElement = document.querySelector("body");
+var navbar = document.getElementById("navbar");
+
+scrollableElement.addEventListener("wheel", findScrollDirectionOtherBrowsers);
+
+function findScrollDirectionOtherBrowsers(event) {
+  var delta;
+
+  if (event.wheelDelta) {
+    delta = event.wheelDelta;
   } else {
+    delta = -1 * event.deltaY;
+  }
+
+  // console.log(event.wheelDelta);
+
+  if (delta < 10) {
+    // console.log("DOWN");
     navbar.classList.remove("sticky");
     navbar.classList.remove("nav-dark");
+  } else if (delta > 10) {
+    // console.log("UP");
+    navbar.classList.add("sticky");
+    navbar.classList.add("nav-dark");
   }
 }

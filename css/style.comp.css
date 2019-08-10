@@ -21,6 +21,10 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth; }
 
+::selection {
+  background-color: #282726;
+  color: #d6cab0; }
+
 .show-on-scroll {
   opacity: 0;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
@@ -194,7 +198,7 @@ body {
   position: relative; }
   .nav-dark {
     background-color: #282726;
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.2); }
   .nav__box {
     opacity: 0;
     animation: fade-in 0.5s 0.1s ease-in-out forwards; }
@@ -581,6 +585,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 2rem;
   max-width: 110rem; }
+  @media only screen and (max-width: 50em) {
+    .projects {
+      max-width: 100%; } }
   .projects .project {
     background-color: rgba(84, 80, 76, 0.8);
     filter: grayscale(100%) contrast(1) brightness(100%);
