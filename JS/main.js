@@ -137,11 +137,18 @@ window.addEventListener("load", function() {
 var scrollableElement = document.querySelector("body");
 var navbar = document.getElementById("navbar");
 
-scrollableElement.addEventListener("wheel", findScrollDirectionOtherBrowsers);
+// scrollableElement.addEventListener("wheel", findScrollDirectionOtherBrowsers);
+
+["wheel", "ontouchstart"].forEach(evt =>
+  scrollableElement.addEventListener(
+    evt,
+    findScrollDirectionOtherBrowsers,
+    false
+  )
+);
 
 function findScrollDirectionOtherBrowsers(event) {
   var delta;
-
   if (event.wheelDelta) {
     delta = event.wheelDelta;
   } else {
