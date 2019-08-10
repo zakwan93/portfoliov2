@@ -160,7 +160,7 @@ for (let i = 0; i < myData.length; i++) {
   var div = document.createElement("div");
   myProjects.appendChild(div);
 
-  console.log(myData[i].hidden);
+  // console.log(myData[i].hidden);
 
   if (myData[i].hidden) {
     div.classList.add("hidden", "project", "show-on-scroll");
