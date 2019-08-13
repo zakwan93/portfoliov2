@@ -179,7 +179,7 @@ for (let i = 0; i < myData.length; i++) {
         </div>
         <div class="project__icons--right">
           <a
-            href=${myData[i].github}"
+            href=${myData[i].github}
             class="project__icons--link
                 project__icons--right"
             target="_blank"
@@ -211,8 +211,6 @@ for (let i = 0; i < myData.length; i++) {
       <ul class="project__language">
       ${myData[i].languages
         .map(language => {
-          // let l = language.replace(",", "");
-          // console.log(language);
           return `<li class="project__language--list"> ${language} </li>`;
         })
         .join("")}
@@ -224,6 +222,4 @@ for (let i = 0; i < myData.length; i++) {
       `;
 
   div.insertAdjacentHTML("afterbegin", project);
-
-  // console.log(project.length);
 }
